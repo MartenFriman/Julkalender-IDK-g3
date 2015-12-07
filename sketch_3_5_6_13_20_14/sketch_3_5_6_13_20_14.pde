@@ -1,3 +1,8 @@
+void setup() {
+  size (800, 800);
+ background (160);
+  }
+
 void luckaTre () {
   noStroke();
 
