@@ -1,4 +1,17 @@
-int luckNummer = 1;
+int[][] framePositions = new int[24][2];
+int frameSize = 100;
+
+float sizeMultiplier = 1.0;
+boolean zoomIn = false;
+boolean zoomOut = false;
+float xTarget = 0;
+float xPos = 0;
+double xPan;
+float yTarget = 0;
+float yPos = 0;
+double yPan;
+
+int dagensLucka = 24;
 
 color Röd      = color(255, 0, 0);
 color MörkRöd  = color(153, 0, 0);
@@ -16,7 +29,9 @@ color Orange   = color(245, 149, 52);
 
 void setup() {
   size (1920, 1080);
- background (160);
+  background (160);
+  initPositions();
+  textSize(55);
   }
 
 void draw() {
