@@ -21,15 +21,10 @@ void setup() {
 
 void draw() {
   bestämLucka();
-}
-
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
+  calendarMain();
   luckaTjugofyra();
 }
-=======
->>>>>>> Stashed changes
+
 void bestämLucka() {
   switch(luckNummer) {
   
@@ -131,7 +126,4 @@ void bestämLucka() {
     
   }
 }
-<<<<<<< Updated upstream
-=======
->>>>>>> origin/master
->>>>>>> Stashed changes
+
