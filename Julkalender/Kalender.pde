@@ -1,6 +1,6 @@
 void calendarMain() {
   if (zoomIn == true) {
-    sizeMultiplier+=0.005;
+    sizeMultiplier+=0.01;
     if (sizeMultiplier > 8) {
       sizeMultiplier = 8;
       zoomIn = false;
@@ -11,7 +11,7 @@ void calendarMain() {
     if (yPos < -yTarget) yPos = -yTarget;
   }
   if (zoomOut == true) {
-    sizeMultiplier-=0.005;
+    sizeMultiplier-=0.01;
     if (sizeMultiplier < 1) {
       sizeMultiplier = 1;
       zoomOut = false;
@@ -43,9 +43,9 @@ void calendarMain() {
 void mouseClicked() {
   if (sizeMultiplier == 1) {
     zoomIn = true;
-    xPan = (framePositions[dagensLucka-1][0]*8 - 560) / 1400.;
+    xPan = (framePositions[dagensLucka-1][0]*8 - 560) / 700.;
     xTarget = framePositions[dagensLucka-1][0]*8 - 560;
-    yPan = (framePositions[dagensLucka-1][1]*8 - 140) / 1400.;
+    yPan = (framePositions[dagensLucka-1][1]*8 - 140) / 700.;
     yTarget = framePositions[dagensLucka-1][1]*8 - 140;
   }
   if (sizeMultiplier == 8) zoomOut = true;
