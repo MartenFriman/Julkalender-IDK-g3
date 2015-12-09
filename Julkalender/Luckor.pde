@@ -1219,7 +1219,7 @@ void lucka23(){
   ellipse(217, 577, 35, 40);
   ellipse(367, 515, 35, 40);
   ellipse(459, 316, 35, 40);
-  fill(gul);
+  fill(yellow);
   ellipse(567, 614, 35, 40);
   ellipse(288, 416, 35, 40);
   

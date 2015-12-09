@@ -72,9 +72,9 @@ void setup() {
   textSize(55);
   mainTimer = millis();
   appleFont = createFont("Apple-Chancery", 20);
-  
-  
-  for(int i = 0; i < quantity; i++) {
+
+
+  for (int i = 0; i < quantity; i++) {
     flakeSize[i] = round(random(minFlakeSize, maxFlakeSize));
     xPosition[i] = random(0, width);
     yPosition[i] = random(0, height);
@@ -98,112 +98,111 @@ void draw() {
   if (sizeMultiplier == 8) {
     pushMatrix();
     translate(560, 140);
-   // luckaFem();
+    chooseFrame();
     popMatrix();
     luckOppning();
   }
   snowFall();
 }
 
-/*
-void bestämLucka() {
- switch(dagensLucka) {
- 
- case 1:
- luckaEtt();
- break;
- 
- case 2:
- luckaTvå();
- break;
- 
- case 3:
- luckaTre();
- break;
- 
- case 4:
- luckaFyra();
- break;
- 
- case 5:
- luckaFem();
- break;
- 
- case 6:
- luckaSex();
- break;
- 
- case 7:
- luckaSju();
- break;
- 
- case 8:
- luckaÅtta();
- break;
- 
- case 9:
- luckaNio();
- break;
- 
- case 10:
- luckaTio();
- break;
- 
- case 11:
- luckaElva();
- break;
- 
- case 12:
- luckaTolv();
- break;
- 
- case 13:
- luckaTretton();
- break;
- 
- case 14:
- luckaFjorton();
- break;
- 
- case 15:
- luckaFemton();
- break;
- 
- case 16:
- luckaSexton();
- break;
- 
- case 17:
- luckaSjutton();
- break;
- 
- case 18:
- luckaArton();
- break;
- 
- case 19:
- luckaNitton();
- break;
- 
- case 20:
- luckaTjugo();
- break;
- 
- case 21:
- luckaTjugoett();
- break;
- 
- case 22:
- luckaTjugotvå();
- break;
- 
- case 23:
- luckaTjugotre();
- break;
- 
- case 24:
- luckaTjugofyra();
- break;
- }
- }
- */
+
+void chooseFrame() {
+  switch(dagensLucka) {
+
+  case 1:
+    lucka1(100, 200, 600, 400);
+    break;
+
+  case 2:
+    lucka2();
+    break;
+
+  case 3:
+    lucka3();
+    break;
+
+  case 4:
+    lucka4();
+    break;
+
+  case 5:
+    lucka5();
+    break;
+
+  case 6:
+    lucka6();
+    break;
+
+  case 7:
+    lucka7();
+    break;
+
+  case 8:
+    lucka8();
+    break;
+
+  case 9:
+    lucka9();
+    break;
+
+  case 10:
+    lucka10();
+    break;
+
+  case 11:
+    lucka11();
+    break;
+
+  case 12:
+    lucka12();
+    break;
+
+  case 13:
+    lucka13();
+    break;
+
+  case 14:
+    lucka14();
+    break;
+
+  case 15:
+    lucka15();
+    break;
+
+  case 16:
+    lucka16();
+    break;
+
+  case 17:
+    lucka17();
+    break;
+
+  case 18:
+    lucka18();
+    break;
+
+  case 19:
+    lucka19();
+    break;
+
+  case 20:
+    lucka20();
+    break;
+
+  case 21:
+    lucka21();
+    break;
+
+  case 22:
+    lucka22();
+    break;
+
+  case 23:
+    lucka23();
+    break;
+
+  case 24:
+    lucka24();
+    break;
+  }
+}
