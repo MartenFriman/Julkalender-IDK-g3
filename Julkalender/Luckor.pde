@@ -1,3 +1,108 @@
+void luckaSju() {
+  size(800, 800);
+  fill(255);
+  ellipse(400, 400, 700, 700);
+  image(lussekatt1, 400, 150, 200, 200);
+  image(lussekatt2, 120, 200, 200, 200);
+  image(lussekatt3, 460, 400, 200, 200);
+  image(lussekatt4, 200, 470, 200, 200);
+  noFill();
+  ellipse(400, 400, 630, 630);
+  ellipse(400, 400, 650, 650);
+  ellipse(400, 400, 670, 670);
+}
+void luckaSexton() {
+  fill(0);
+  rect(0, 0, 800, 800);
+  noStroke();
+  fill(237, 240, 239);
+  rect(0, 600, 800, 200);
+  fill(0, 102, 51);
+  triangle(400, 100, 350, 250, 450, 250);
+  triangle(400, 210, 250, 500, 530, 500);
+  triangle(400, 350, 200, 650, 560, 650);
+  fill(102, 51, 0);
+  rect(380, 650, 20, 30);
+}
+void luckaSjutton() {
+  size(800, 800);
+  fill(255, 242, 215);
+  rect(0, 0, 800, 800);
+  fill(0);
+  rect(350, 130, 100, 50);
+  fill(153, 0, 0);
+  ellipse(400, 450, 550, 550);
+  noFill();
+  stroke(0);
+  strokeWeight(4);
+  curve(300, 200, 400, 150, 400, 50, 150, 400);
+  fill(255);
+  noStroke();
+  ellipse(450, 450, 400, 500);
+  fill(153, 0, 0);
+  ellipse(430, 470, 450, 500);
+}
+
+void luckaArton(){
+   pFont = createFont("helvetica", 50); 
+  textFont(pFont);
+  size(800, 800);
+  fill(0);
+  rect(0,0,800,800);
+
+  fill(255, 0, 0);
+  noStroke();
+  rect(300, 100, 300, 500);
+  ellipse(350, 600, 500, 300);
+  rect(580, 50, 20, 50); 
+  fill(255);
+  ellipse(310, 100, 50, 50);
+  ellipse(320, 110, 50, 50);
+  ellipse(350, 100, 50, 50);
+  ellipse(360, 110, 50, 50);
+  ellipse(390, 100, 50, 50);
+  ellipse(400, 110, 50, 50);
+  ellipse(430, 100, 50, 50);
+  ellipse(440, 110, 50, 50);
+  ellipse(470, 100, 50, 50);
+  ellipse(480, 110, 50, 50);
+  ellipse(510, 100, 50, 50);
+  ellipse(520, 110, 50, 50);
+  ellipse(550, 100, 50, 50);
+  ellipse(560, 110, 50, 50);
+  ellipse(590, 100, 50, 50);
+  fill(255, 242, 215);
+
+  fill(0);
+  text("Merry X-mas", 300, 200);
+
+
+
+}
+  
+
+void luckaTio() { //SNÖ!!!!
+  fill(24, 23, 88);
+  rect(0, 0, 800, 800);
+  fill(237, 240, 239);
+  rect(0, 500, 800, 500);
+  ellipse(400, 600, 700, 300);
+  fill(153, 0, 0);
+  noStroke();
+  rect(300, 200, 50, 500);
+  rect(400, 200, 50, 500);
+  triangle(300, 200, 325, 170, 350, 200);
+  triangle(400, 200, 425, 170, 450, 200);
+  fill(0, 0, 0);
+  rect(200, 100, 10, 500);
+  rect(230, 100, 10, 500);
+  rect(195, 100, 20, 70);
+  rect(225, 100, 20, 70);
+  fill(237, 240, 239, 150);
+  ellipse(400, 700, 500, 300);
+  fill(153, 0, 0);
+}
+
 void lucka3 () {
   noStroke();
 
@@ -269,9 +374,9 @@ void lucka14() { //SNOW
 
 void luckaTwentyOne() {
   fill(255);
-  rect(0,0,800, 500);
+  rect(0, 0, 800, 500);
   fill(237, 240, 239);
-  rect(0,500, 800, 400);
+  rect(0, 500, 800, 400);
 
   //body
   noStroke();
@@ -347,4 +452,37 @@ void luckaTwentyOne() {
   rect(468, 730, 21, 21, 50, 50, 0, 0);
   rect(346, 678, 17, 17, 50, 50, 0, 0);
   rect(407, 680, 17, 17, 50, 50, 0, 0);
+}
+
+void lucka1(int xStart, int yStart, int tvWidth, int tvHeight) {
+  fill(224, 224, 224);
+  rect(0, 650, 800, 200);
+  strokeWeight(5);
+  line(100, 50, 300, 200);
+  line(600, 50, 300, 200);
+  line(150, 700, 300, 500);  
+  line(500, 600, 600, 700);
+  fill(102, 51, 0);
+  rect(xStart, yStart, tvWidth, tvHeight);
+
+  //images
+  if (eImage == 1) image(ernst1, 150, 250, 400, 300);
+  else if (eImage == 2) image(ernst2, 150, 250, 400, 300);
+  else if (eImage == 3) image(ernst3, 150, 250, 400, 300);
+  noFill();
+  rect(xStart+50, yStart + 50, tvWidth-200, tvHeight-100, 10);
+  if (millis()-timerErnst > 1000) {
+    timerErnst = millis();
+    eImage++;
+    if (eImage > 3) eImage = 1;
+  }
+
+  //buttons
+  ellipse(xStart+530, yStart + 60, tvWidth-590, tvHeight-390);  
+  ellipse(xStart+550, yStart + 60, tvWidth-590, tvHeight-390);
+  ellipse(xStart+530, yStart + 80, tvWidth-590, tvHeight-390);
+  ellipse(xStart+550, yStart + 80, tvWidth-590, tvHeight-390);
+  //in the television
+  fill(255, 242, 215);
+
 }
