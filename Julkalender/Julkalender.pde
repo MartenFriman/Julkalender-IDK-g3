@@ -53,7 +53,7 @@ color yellow     = color(249, 215, 47);
 color orange     = color(245, 149, 52);
 
 // frame variables
-PFont pFont;
+PFont appleFont;
 
 void setup() {
   //size (1920, 1080);
@@ -63,7 +63,7 @@ void setup() {
   textSize(55);
   mainTimer = millis();
 <<<<<<< HEAD
-  pFont = createFont("Apple-Chancery", 20);
+  appleFont = createFont("Apple-Chancery", 20);
   textFont(pFont);
 =======
   timer1 = millis();
