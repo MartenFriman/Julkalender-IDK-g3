@@ -31,6 +31,12 @@ final int timeToZoomOut = 1;
 
 int timerPhase = 1;
 
+PImage lussekatt1, lussekatt2, lussekatt3, lussekatt4;
+PImage ernst1, ernst2, ernst3;
+int eImage = 1;
+int timerErnst;
+
+
 // Preset colors based on our initial color palette
 color red = color(255, 0, 0);
 color darkRed    = color(153, 0, 0);
@@ -56,19 +62,30 @@ void setup() {
   initPositions();
   textSize(55);
   mainTimer = millis();
+<<<<<<< HEAD
   pFont = createFont("Apple-Chancery", 20);
   textFont(pFont);
+=======
+  timer1 = millis();
+  ernst1 = loadImage("ernst.jpg");
+  ernst2 = loadImage("ernst2.jpg");
+  ernst3 = loadImage("ernst3.png");
+    lussekatt1 = loadImage("lussekatt1.jpg");
+  lussekatt2 = loadImage("lussekatt1.jpg");
+  lussekatt3 = loadImage("lussekatt1.jpg");
+  lussekatt4 = loadImage("lussekatt1.jpg");
+>>>>>>> origin/master
 }
 
 void draw() {
   background(0);
- // bestämLucka();
+  // bestämLucka();
   calendarMain();
   if (sizeMultiplier == 8) {
     pushMatrix();
     translate(560, 140);
     luckaFem();
-    
+
     popMatrix();
     luckOppning();
   }
@@ -76,103 +93,103 @@ void draw() {
 
 /*
 void bestämLucka() {
-  switch(dagensLucka) {
-
-  case 1:
-    luckaEtt();
-    break;
-
-  case 2:
-    luckaTvå();
-    break;
-
-  case 3:
-    luckaTre();
-    break;
-
-  case 4:
-    luckaFyra();
-    break;
-
-  case 5:
-    luckaFem();
-    break;
-
-  case 6:
-    luckaSex();
-    break;
-
-  case 7:
-    luckaSju();
-    break;
-
-  case 8:
-    luckaÅtta();
-    break;
-
-  case 9:
-    luckaNio();
-    break;
-
-  case 10:
-    luckaTio();
-    break;
-
-  case 11:
-    luckaElva();
-    break;
-
-  case 12:
-    luckaTolv();
-    break;
-
-  case 13:
-    luckaTretton();
-    break;
-
-  case 14:
-    luckaFjorton();
-    break;
-
-  case 15:
-    luckaFemton();
-    break;
-
-  case 16:
-    luckaSexton();
-    break;
-
-  case 17:
-    luckaSjutton();
-    break;
-
-  case 18:
-    luckaArton();
-    break;
-
-  case 19:
-    luckaNitton();
-    break;
-
-  case 20:
-    luckaTjugo();
-    break;
-
-  case 21:
-    luckaTjugoett();
-    break;
-
-  case 22:
-    luckaTjugotvå();
-    break;
-
-  case 23:
-    luckaTjugotre();
-    break;
-
-  case 24:
-    luckaTjugofyra();
-    break;
-  }
-}
-*/
+ switch(dagensLucka) {
+ 
+ case 1:
+ luckaEtt();
+ break;
+ 
+ case 2:
+ luckaTvå();
+ break;
+ 
+ case 3:
+ luckaTre();
+ break;
+ 
+ case 4:
+ luckaFyra();
+ break;
+ 
+ case 5:
+ luckaFem();
+ break;
+ 
+ case 6:
+ luckaSex();
+ break;
+ 
+ case 7:
+ luckaSju();
+ break;
+ 
+ case 8:
+ luckaÅtta();
+ break;
+ 
+ case 9:
+ luckaNio();
+ break;
+ 
+ case 10:
+ luckaTio();
+ break;
+ 
+ case 11:
+ luckaElva();
+ break;
+ 
+ case 12:
+ luckaTolv();
+ break;
+ 
+ case 13:
+ luckaTretton();
+ break;
+ 
+ case 14:
+ luckaFjorton();
+ break;
+ 
+ case 15:
+ luckaFemton();
+ break;
+ 
+ case 16:
+ luckaSexton();
+ break;
+ 
+ case 17:
+ luckaSjutton();
+ break;
+ 
+ case 18:
+ luckaArton();
+ break;
+ 
+ case 19:
+ luckaNitton();
+ break;
+ 
+ case 20:
+ luckaTjugo();
+ break;
+ 
+ case 21:
+ luckaTjugoett();
+ break;
+ 
+ case 22:
+ luckaTjugotvå();
+ break;
+ 
+ case 23:
+ luckaTjugotre();
+ break;
+ 
+ case 24:
+ luckaTjugofyra();
+ break;
+ }
+ }
+ */

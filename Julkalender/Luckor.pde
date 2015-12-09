@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 void luckaTva(){
  //background
  fill(224,224,224);
@@ -35,41 +36,151 @@ void luckaTva(){
  
  fill(0);
  text("Merry Christmas", 457, 290);
+=======
+<<<<<<< HEAD
+void luckaSju() {
+  size(800, 800);
+  fill(255);
+  ellipse(400, 400, 700, 700);
+  image(lussekatt1, 400, 150, 200, 200);
+  image(lussekatt2, 120, 200, 200, 200);
+  image(lussekatt3, 460, 400, 200, 200);
+  image(lussekatt4, 200, 470, 200, 200);
+  noFill();
+  ellipse(400, 400, 630, 630);
+  ellipse(400, 400, 650, 650);
+  ellipse(400, 400, 670, 670);
+}
+void luckaSexton() {
+  fill(0);
+  rect(0, 0, 800, 800);
+  noStroke();
+  fill(237, 240, 239);
+  rect(0, 600, 800, 200);
+  fill(0, 102, 51);
+  triangle(400, 100, 350, 250, 450, 250);
+  triangle(400, 210, 250, 500, 530, 500);
+  triangle(400, 350, 200, 650, 560, 650);
+  fill(102, 51, 0);
+  rect(380, 650, 20, 30);
+}
+void luckaSjutton() {
+  size(800, 800);
+  fill(255, 242, 215);
+  rect(0, 0, 800, 800);
+  fill(0);
+  rect(350, 130, 100, 50);
+  fill(153, 0, 0);
+  ellipse(400, 450, 550, 550);
+  noFill();
+  stroke(0);
+  strokeWeight(4);
+  curve(300, 200, 400, 150, 400, 50, 150, 400);
+  fill(255);
+  noStroke();
+  ellipse(450, 450, 400, 500);
+  fill(153, 0, 0);
+  ellipse(430, 470, 450, 500);
+}
+
+void luckaArton(){
+   pFont = createFont("helvetica", 50); 
+  textFont(pFont);
+  size(800, 800);
+  fill(0);
+  rect(0,0,800,800);
+
+  fill(255, 0, 0);
+  noStroke();
+  rect(300, 100, 300, 500);
+  ellipse(350, 600, 500, 300);
+  rect(580, 50, 20, 50); 
+  fill(255);
+  ellipse(310, 100, 50, 50);
+  ellipse(320, 110, 50, 50);
+  ellipse(350, 100, 50, 50);
+  ellipse(360, 110, 50, 50);
+  ellipse(390, 100, 50, 50);
+  ellipse(400, 110, 50, 50);
+  ellipse(430, 100, 50, 50);
+  ellipse(440, 110, 50, 50);
+  ellipse(470, 100, 50, 50);
+  ellipse(480, 110, 50, 50);
+  ellipse(510, 100, 50, 50);
+  ellipse(520, 110, 50, 50);
+  ellipse(550, 100, 50, 50);
+  ellipse(560, 110, 50, 50);
+  ellipse(590, 100, 50, 50);
+  fill(255, 242, 215);
+
+  fill(0);
+  text("Merry X-mas", 300, 200);
+
+
+
+}
+  
+
+void luckaTio() { //SNÖ!!!!
+  fill(24, 23, 88);
+  rect(0, 0, 800, 800);
+  fill(237, 240, 239);
+  rect(0, 500, 800, 500);
+  ellipse(400, 600, 700, 300);
+  fill(153, 0, 0);
+  noStroke();
+  rect(300, 200, 50, 500);
+  rect(400, 200, 50, 500);
+  triangle(300, 200, 325, 170, 350, 200);
+  triangle(400, 200, 425, 170, 450, 200);
+  fill(0, 0, 0);
+  rect(200, 100, 10, 500);
+  rect(230, 100, 10, 500);
+  rect(195, 100, 20, 70);
+  rect(225, 100, 20, 70);
+  fill(237, 240, 239, 150);
+  ellipse(400, 700, 500, 300);
+  fill(153, 0, 0);
+>>>>>>> origin/master
 }
 
 void luckaTre () {
+=======
+void lucka3 () {
+>>>>>>> origin/master
   noStroke();
 
-  fill (153, 0, 0); //,mörkröd
-  rect (150, 100, 500, 600, 5); //ytterkanten på lykta
-  rect (325, 50, 150, 50); //handtag röd
+  fill (153, 0, 0); //DARK RED
+  rect (150, 100, 500, 600, 5); //OUTERLINE ON LANTERN
+  rect (325, 50, 150, 50); //HANDEL RED
 
   fill (255, 242, 215); //vit
-  rect (170, 120, 460, 530, 5); //vit fyllnad lykta
+  rect (170, 120, 460, 530, 5); //WHITE FILLING LANTERN
 
-  fill (249, 215, 47); //gul
-  ellipse (400, 255, 30, 60); //låga
-  fill(255); //vit
-  ellipse (400, 269, 10, 30); //vit låga
-  fill(0);
-  ellipse (400, 271, 4, 15); //svart låga
+  fill (249, 215, 47); //YELLOW
+  ellipse (400, 255, 30, 60); //YELLOW FLAME
+  fill(255); //WHITE
+  ellipse (400, 269, 10, 30); //WHITE FLAME
+  fill(0); //BLACK
+  ellipse (400, 271, 4, 15); //BLACK FLAME
 
   fill (255);
   stroke (224, 224, 224);
   strokeWeight(0.7);
-  rect (305, 300, 190, 350, 15); //blockljus
+  rect (305, 300, 190, 350, 15); 
 
-  stroke (153, 0, 0); //mörkröd
-  strokeWeight(15); //bredd på kryss
-  line (170, 120, 630, 650);//vänster till höger linje
-  line (630, 120, 170, 650);//höger till vänster linje
+  stroke (153, 0, 0); //DARK RED
+  strokeWeight(15); //WIDTH ON CROSS
+  line (170, 120, 630, 650);//LEFT TO RIGHT LINE
+  line (630, 120, 170, 650);//RIGHT TO LEFT LINE
 
-  stroke (0); //svart veke
-  strokeWeight(1.5); //tjocklek veken
-  line(399, 283, 401, 297); //veken början och slut
+  stroke (0); //BLACK WICK
+  strokeWeight(1.5); //WIDTH ON WICK
+  line(399, 283, 401, 297); //WICK - BEGINNING & END
 }
 
 
+<<<<<<< HEAD
  //SKA HA SNÖ!! 
 void luckaFyra() {
   //background
@@ -145,15 +256,23 @@ void luckaFyra() {
 
 
 void luckaFem () {
+=======
+void lucka5 () { //SNOW
+>>>>>>> origin/master
   stroke(102, 51, 0);
   strokeWeight(0.5);
 
-  fill (153, 76, 0); // brun
-  rect (100, 350, 600, 300, 1);// huset 
-  quad(100, 222, 700, 222, 760, 394, 36, 394); //tak
+  fill (153, 76, 0); // BROWN
+  rect (100, 350, 600, 300, 1);// HOUSE 
+  quad(100, 222, 700, 222, 760, 394, 36, 394); //ROOF
   rect (447, 152, 60, 70);
 
+<<<<<<< HEAD
   //RÖD PRICK TAK
+=======
+
+  //RED DOT ROOF
+>>>>>>> origin/master
   fill (255, 0, 0); 
   ellipse(116, 249, 40, 40);
   ellipse(136, 365, 40, 40);
@@ -164,7 +283,7 @@ void luckaFem () {
   ellipse(450, 250, 40, 40);
   ellipse(270, 250, 40, 40);
 
-  //GRÖN PRICK TAK
+  //GREEN DOT ROOF
   fill (0, 153, 0);
   ellipse(94, 308, 40, 40);
   ellipse(200, 365, 40, 40);
@@ -175,7 +294,7 @@ void luckaFem () {
   ellipse(390, 250, 40, 40);
   ellipse(210, 250, 40, 40);
 
-  //GUL PRICK TAK
+  //YELLOW DOT ROOF
   fill (249, 215, 47); 
   ellipse(75, 365, 40, 40);
   ellipse(266, 365, 40, 40);
@@ -186,74 +305,86 @@ void luckaFem () {
   ellipse(330, 250, 40, 40);
   ellipse(161, 250, 40, 40);
 
-  //GUL PRICK HUS
-  fill (249, 215, 47); //gul 1
+  //YELLOW DOT ON HOUSE
+  fill (249, 215, 47); //YELLOW ON DOOR
   ellipse(350, 625, 40, 40);
   ellipse(350, 475, 40, 40);
-  ellipse(460, 530, 40, 40);//SLUT PÅ DÖRR
-  //FÖNSTER HÖGER
+  ellipse(460, 530, 40, 40);//END OF DOOR
+  //WINDOW RIGHT
   ellipse(545, 470, 40, 40);
   ellipse(655, 520, 40, 40);
   ellipse(545, 575, 40, 40);
-  //FÖNSTER VÄNSTER
+  //WINDOW LEFT
   ellipse(275, 470, 40, 40);
   ellipse(165, 525, 40, 40);
   ellipse(280, 580, 40, 40);
 
+<<<<<<< HEAD
   //GRÖN PRICK HUS
   fill (0, 153, 0); //grön 2
+=======
+
+  //GREEN DOT ON HOUSE
+  fill (0, 153, 0); //GREEN
+>>>>>>> origin/master
   ellipse(350, 575, 40, 40);
   ellipse(405, 475, 40, 40);
-  ellipse(460, 580, 40, 40);//SLUT PÅ DÖRR
-  //FÖNSTER HÖGER
+  ellipse(460, 580, 40, 40);//END OF DOOR
+  //WINDOW RIGHT
   ellipse(600, 470, 40, 40);
   ellipse(655, 575, 40, 40);
   ellipse(545, 525, 40, 40);
-  //FÖNSTER VÄNSTER
+  //WINDOW LEFT
   ellipse(220, 470, 40, 40);
   ellipse(165, 580, 40, 40);
   ellipse(275, 525, 40, 40);
 
-  //RÖD PRICK HUS
-  fill (255, 0, 0); //röd 3
+  //RED DOT ON HOUSE
+  fill (255, 0, 0); //RED
   ellipse(350, 525, 40, 40);
   ellipse(460, 475, 40, 40);
-  ellipse(460, 625, 40, 40);//SLUT PÅ DÖRR
-  //FÖNSTER HÖGER
+  ellipse(460, 625, 40, 40);//END OF DOOR
+  //WINDOW RIGHT
   ellipse(655, 470, 40, 40);
   ellipse(600, 575, 40, 40);
-  //FÖNSTER VÄNSTER
+  //WINDOW LEFT
   ellipse(165, 470, 40, 40);
   ellipse(225, 580, 40, 40);
 }
 
+<<<<<<< HEAD
 void luckaSex() {
+=======
+void lucka6() {
+
+>>>>>>> origin/master
   noStroke();
   fill (0, 102, 51);
-  rect (100, 540, 600, 200, 5); //botten på adventsstake
-  rect (130, 500, 70, 50, 5); //1a
-  rect (290, 500, 70, 50, 5); //2a
-  rect (450, 500, 70, 50, 5); //3e
-  rect (600, 500, 70, 50, 5); //4e
+  rect (100, 540, 600, 200, 5); //BOTTOM OF ADVENTCANDLE-HOLDER
+  rect (130, 500, 70, 50, 5); //1ST
+  rect (290, 500, 70, 50, 5); //2ND
+  rect (450, 500, 70, 50, 5); //3RD
+  rect (600, 500, 70, 50, 5); //4TH
 
-  //LJUSEN
+  //CANDLES 2
   fill (255); 
   rect (140, 250, 50, 250);
   rect (300, 250, 50, 250);
   rect (460, 250, 50, 250);
   rect (610, 250, 50, 250);
 
-  //GULA LJUSET
-  fill (249, 215, 47); //GUL 1
+  //YELLOW FLAME ON CANDLE
+  fill (249, 215, 47); //YELLOW
   ellipse (166, 205, 20, 50); 
   ellipse (325, 205, 20, 50); 
 
-  fill(255);
+//WHITE FLAME ON CANDLE
+  fill(255);//WHITE
   ellipse (166, 217, 5, 30);
   ellipse (324, 217, 5, 30);
 
-  //VEKEN
-  stroke(0);
+  //WICK
+  stroke(0); //BLACK
   strokeWeight(2);
   line (165, 223, 167, 249);
   line (323, 223, 326, 249);
@@ -261,6 +392,7 @@ void luckaSex() {
   line (632, 223, 635, 249);
 }
 
+<<<<<<< HEAD
 //OM MÖJLIGT, SNÖ I FÖNSTRET
 void luckaAtta() {
   //background
@@ -417,6 +549,8 @@ void luckaTolv() {
 
 
 void luckaTretton () {
+=======
+void lucka13 () {
   noStroke();
   fill (0, 102, 51);
   rect (100, 540, 600, 200, 5); //botten på adventsstake
@@ -425,26 +559,26 @@ void luckaTretton () {
   rect (450, 500, 70, 50, 5); //3e
   rect (600, 500, 70, 50, 5); //4e
 
-  //LJUSEN
+  //CANDLES 3
   fill (255); 
   rect (140, 250, 50, 250);
   rect (300, 250, 50, 250);
   rect (460, 250, 50, 250);
   rect (610, 250, 50, 250);
 
-  //GULA LÅGAN
-  fill (249, 215, 47); // GUL 
+  //YELLOW FLAME ON CANDLE
+  fill (249, 215, 47); // YELLOW 
   ellipse (166, 205, 20, 50); 
   ellipse (325, 205, 20, 50); 
   ellipse (483, 205, 20, 50); 
 
-  //VITA LÅGAN
+  //WHITE FLAME
   fill(255); 
   ellipse (166, 217, 5, 30);
   ellipse (324, 217, 5, 30);
   ellipse (482, 217, 5, 30);
 
-  //VEKEN
+  //WICK
   stroke(0);
   strokeWeight(2);
   line (165, 223, 167, 249);
@@ -453,13 +587,56 @@ void luckaTretton () {
   line (632, 223, 635, 249);
 }
 
-void luckaFjorton() {
+void lucka20 () {
+>>>>>>> origin/master
   noStroke();
+  fill (0, 102, 51); //GREEN
+  rect (100, 540, 600, 200, 5); //BOTTOM OF ADVENTCANDLE-HOLDER
+  rect (130, 500, 70, 50, 5); //1ST
+  rect (290, 500, 70, 50, 5); //2ND
+  rect (450, 500, 70, 50, 5); //3RD
+  rect (600, 500, 70, 50, 5); //4TH
+
+  //CANDLES 4
+  fill (255); //WHITE
+  rect (140, 250, 50, 250);
+  rect (300, 250, 50, 250);
+  rect (460, 250, 50, 250);
+  rect (610, 250, 50, 250);
+
+  //YELLOW FLAME ON CANDLE
+  fill (249, 215, 47); // GUL 
+  ellipse (166, 205, 20, 50); 
+  ellipse (325, 205, 20, 50); 
+  ellipse (483, 205, 20, 50); 
+
+  //WHITE FLAME ON CANLDE
+  fill(255); //WHITE 
+  ellipse (166, 217, 5, 30);
+  ellipse (324, 217, 5, 30);
+  ellipse (482, 217, 5, 30);
+
+  //WICK
+  stroke(0); //BLACK
+  strokeWeight(2);
+  line (165, 223, 167, 249);
+  line (323, 223, 326, 249);
+  line (481, 223, 485, 249);
+  line (632, 223, 635, 249);
+}
+
+void lucka14() { //SNOW
+  noStroke();
+<<<<<<< HEAD
   //TRIANGEL LJUS
+=======
+
+  //TRIANGLE CANDLE
+>>>>>>> origin/master
   fill (249, 215, 47); 
   triangle(383, 146, 93, 612, 652, 612);
 
-  //SNÖKULOR
+  //SNOWBALLS
   fill (255);
   ellipse (383, 150, 90, 90);
   ellipse (426, 220, 90, 90);
@@ -608,9 +785,12 @@ void luckaTjugo () {
 
 void luckaTjugoEtt() {
   fill(255);
+<<<<<<< HEAD
   rect(0, 0, 800, 800);
 
   fill(255);
+=======
+>>>>>>> origin/master
   rect(0, 0, 800, 500);
   fill(237, 240, 239);
   rect(0, 500, 800, 400);
@@ -688,4 +868,42 @@ void luckaTjugoEtt() {
   rect(468, 730, 21, 21, 50, 50, 0, 0);
   rect(346, 678, 17, 17, 50, 50, 0, 0);
   rect(407, 680, 17, 17, 50, 50, 0, 0);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+}
+
+void lucka1(int xStart, int yStart, int tvWidth, int tvHeight) {
+  fill(224, 224, 224);
+  rect(0, 650, 800, 200);
+  strokeWeight(5);
+  line(100, 50, 300, 200);
+  line(600, 50, 300, 200);
+  line(150, 700, 300, 500);  
+  line(500, 600, 600, 700);
+  fill(102, 51, 0);
+  rect(xStart, yStart, tvWidth, tvHeight);
+
+  //images
+  if (eImage == 1) image(ernst1, 150, 250, 400, 300);
+  else if (eImage == 2) image(ernst2, 150, 250, 400, 300);
+  else if (eImage == 3) image(ernst3, 150, 250, 400, 300);
+  noFill();
+  rect(xStart+50, yStart + 50, tvWidth-200, tvHeight-100, 10);
+  if (millis()-timerErnst > 1000) {
+    timerErnst = millis();
+    eImage++;
+    if (eImage > 3) eImage = 1;
+  }
+
+  //buttons
+  ellipse(xStart+530, yStart + 60, tvWidth-590, tvHeight-390);  
+  ellipse(xStart+550, yStart + 60, tvWidth-590, tvHeight-390);
+  ellipse(xStart+530, yStart + 80, tvWidth-590, tvHeight-390);
+  ellipse(xStart+550, yStart + 80, tvWidth-590, tvHeight-390);
+  //in the television
+  fill(255, 242, 215);
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
 }
