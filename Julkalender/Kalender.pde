@@ -1,6 +1,6 @@
 void mainTimer() {
   if (timerPhase == timeToZoomOut) {
-    if (millis() - mainTimer > 30000) {
+    if (millis() - mainTimer > 12000) {
       mouseClicked();
       openFrame = true;
       mainTimer = millis();
@@ -9,7 +9,7 @@ void mainTimer() {
     }
   }
   if (timerPhase == timeToZoomIn) {
-    if (millis() - mainTimer > 30000) {
+    if (millis() - mainTimer > 12000) {
       closeFrame = true;
       mainTimer = millis();
       timerPhase = timeToZoomOut;
@@ -20,7 +20,7 @@ void mainTimer() {
 void calendarMain() {
   mainTimer();
   if (zoomIn == true) {
-    sizeMultiplier+=0.01;
+    sizeMultiplier+=0.02;
     if (sizeMultiplier > 8) {
       sizeMultiplier = 8;
       zoomIn = false;
@@ -31,7 +31,7 @@ void calendarMain() {
     if (yPos < -yTarget) yPos = -yTarget;
   }
   if (zoomOut == true) {
-    sizeMultiplier-=0.01;
+    sizeMultiplier-=0.02;
     if (sizeMultiplier <= 1) {
       sizeMultiplier = 1;
       if (frameRotation == true) dagensLucka++;
@@ -71,9 +71,9 @@ void calendarMain() {
 void mouseClicked() {
   if (sizeMultiplier == 1) {
     zoomIn = true;
-    xPan = (framePositions[dagensLucka-1][0]*8 - 560) / 700.;
+    xPan = (framePositions[dagensLucka-1][0]*8 - 560) / 350.;
     xTarget = framePositions[dagensLucka-1][0]*8 - 560;
-    yPan = (framePositions[dagensLucka-1][1]*8 - 140) / 700.;
+    yPan = (framePositions[dagensLucka-1][1]*8 - 140) / 350.;
     yTarget = framePositions[dagensLucka-1][1]*8 - 140;
   }
   if (sizeMultiplier == 8) zoomOut = true;
@@ -157,9 +157,9 @@ void initPositions() {
 
 void luckOppning() {
   if (openFrame == true) {
-    frameXPos += 4;
-    if (extendY == true) frameYPos += 3;
-    else frameYPos -=3;
+    frameXPos += 8;
+    if (extendY == true) frameYPos += 6;
+    else frameYPos -=6;
     if (frameXPos == frameSize*8) extendY = !extendY;
     if (frameXPos >= frameSize*14) {
       frameXPos = frameSize*14;
@@ -167,9 +167,9 @@ void luckOppning() {
     }
   }
   if (closeFrame == true) {
-    frameXPos -= 4;
-    if (extendY == true) frameYPos -= 3;
-    else frameYPos +=3;
+    frameXPos -= 8;
+    if (extendY == true) frameYPos -= 6;
+    else frameYPos +=6;
     if (frameXPos == frameSize*8) extendY = !extendY;
     if (frameXPos <= 0) {
       frameXPos = 0;

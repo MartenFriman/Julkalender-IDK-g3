@@ -40,7 +40,6 @@ void lucka2(){
 }
 
 void lucka7() {
-  size(800, 800);
   fill(255);
   ellipse(400, 400, 700, 700);
   image(lussekatt, 400, 150, 200, 200);
@@ -936,12 +935,13 @@ void lucka1(int xStart, int yStart, int tvWidth, int tvHeight) {
   if (eImage == 1) image(ernst1, 150, 250, 400, 300);
   else if (eImage == 2) image(ernst2, 150, 250, 400, 300);
   else if (eImage == 3) image(ernst3, 150, 250, 400, 300);
+  else if (eImage == 4) image(ernst4, 150, 250, 400, 300);
   noFill();
   rect(xStart+50, yStart + 50, tvWidth-200, tvHeight-100, 10);
   if (millis()-timerErnst > 1000) {
     timerErnst = millis();
     eImage++;
-    if (eImage > 3) eImage = 1;
+    if (eImage > 4) eImage = 1;
   }
 
   //buttons
