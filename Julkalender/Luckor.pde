@@ -1,3 +1,42 @@
+void luckaTva(){
+ //background
+ fill(224,224,224);
+ rect(0,0,800, 800);
+  
+  //present
+  fill(153,0,0);
+ rect(150, 200, 500, 350);
+ 
+ //ribbon
+ stroke(0, 102, 51);
+ strokeWeight(30);
+ strokeCap(SQUARE);
+ line(395, 200, 395, 550); 
+ 
+ line(150, 380, 650, 380);
+ strokeCap(ROUND);
+ line(390, 210, 295, 135); 
+ line(295, 139, 260, 210);
+ line(260, 215, 390, 215);
+ line(395, 215, 485, 125);
+ line(490, 125, 510, 205);
+ line(490, 130, 395, 220);
+ line(510, 210, 400, 220);
+ 
+ //sign
+ noStroke();
+ fill(255, 242, 215);
+ rect(450, 260, 155, 50);
+ 
+ stroke(0);
+ strokeWeight(5);
+ strokeCap(ROUND);
+ line(410, 235, 450, 260);
+ 
+ fill(0);
+ text("Merry Christmas", 457, 290);
+}
+
 void luckaTre () {
   noStroke();
 
@@ -31,6 +70,80 @@ void luckaTre () {
 }
 
 
+ //SKA HA SNÖ!! 
+void luckaFyra() {
+  //background
+  fill(160);
+  rect(0,0,800,800);
+  
+  //ground
+  fill(153, 76, 0);
+  rect(0, 662, 800, 161);
+
+  //wall
+  noStroke();
+  fill(255, 242, 215);
+  rect(0, 0, 373, 662);
+  rect(373, 0, 427, 110);
+  rect(673, 110, 128, 553);
+  rect(371, 420, 303, 242);
+
+  //table
+  fill(102, 51, 0);
+  quad(0, 510, 179, 420, 705, 495, 535, 595);
+  strokeWeight(12);
+  strokeCap(SQUARE);
+  stroke(102, 51, 0);
+  line(3, 515, 527, 598);
+  line(703, 497, 536, 597);
+
+  //legs
+  rect(2, 519, 20, 220);
+  rect(525, 590, 20, 170);
+  rect(678, 505, 20, 200);
+  rect(158, 535, 20, 150);
+
+  //mulled wine
+  stroke(0);
+  strokeWeight(1);
+  fill(237, 240, 239);
+  rect(453, 450, 40, 50, 0, 0, 20, 20);
+  rect(527, 460, 40, 50, 0, 0, 20, 20);
+  rect(425, 466, 30, 40, 0, 0, 20, 20);
+  ellipse(248, 460, 90, 90);
+  quad(267, 421, 281, 430, 296, 414, 285, 404);
+  fill(153, 0, 0);
+  arc(249, 462, 80, 80, 0, PI+QUARTER_PI, CHORD);
+
+  //raisins
+  fill(255);
+  rect(330, 480, 40, 20);
+  fill(0);
+  ellipse(337, 486, 5, 5);
+  ellipse(341, 485, 5, 5);
+  ellipse(345, 485, 5, 5);
+  ellipse(336, 482, 5, 5);
+  ellipse(344, 489, 5, 5);
+  ellipse(351, 486, 5, 5);
+  ellipse(358, 485, 5, 5);
+  ellipse(362, 485, 5, 5);
+  ellipse(361, 482, 5, 5);
+  ellipse(352, 483, 5, 5);
+  ellipse(344, 482, 5, 5);
+
+  //window
+  stroke(0);
+  strokeWeight(3);
+  noFill();
+  rect(374, 108, 300, 300);
+  fill(153, 76, 0);
+  quad(375, 410, 675, 410, 689, 417, 356, 417);
+  stroke(0, 0, 0, 150);
+  line(523, 112, 528, 410);
+  line(375, 268, 675, 268);
+}
+
+
 void luckaFem () {
   stroke(102, 51, 0);
   strokeWeight(0.5);
@@ -39,7 +152,6 @@ void luckaFem () {
   rect (100, 350, 600, 300, 1);// huset 
   quad(100, 222, 700, 222, 760, 394, 36, 394); //tak
   rect (447, 152, 60, 70);
-
 
   //RÖD PRICK TAK
   fill (255, 0, 0); 
@@ -88,7 +200,6 @@ void luckaFem () {
   ellipse(165, 525, 40, 40);
   ellipse(280, 580, 40, 40);
 
-
   //GRÖN PRICK HUS
   fill (0, 153, 0); //grön 2
   ellipse(350, 575, 40, 40);
@@ -117,7 +228,6 @@ void luckaFem () {
 }
 
 void luckaSex() {
-
   noStroke();
   fill (0, 102, 51);
   rect (100, 540, 600, 200, 5); //botten på adventsstake
@@ -150,6 +260,161 @@ void luckaSex() {
   line (481, 223, 485, 249);
   line (632, 223, 635, 249);
 }
+
+//OM MÖJLIGT, SNÖ I FÖNSTRET
+void luckaAtta() {
+  //background
+  fill(255);
+  rect(0,0,800,800);
+  
+  //window
+  stroke(0, 0, 0);
+  strokeWeight(5);
+  fill(237, 240, 239);
+  rect(90, 90, 600, 600);
+  fill(153, 76, 0);
+  quad(95, 690, 689, 690, 725, 706, 45, 702);
+  stroke(0, 0, 0, 150);
+  line(380, 95, 380, 690);
+  line(90, 380, 690, 380);
+
+  //star
+  strokeWeight(3);
+  stroke(0, 0, 0, 200);
+  fill(249, 215, 47, 240);
+  ellipse(380, 380, 100, 100);
+  triangle(381, 210, 349, 341, 414, 342);
+  triangle(231, 336, 346, 345, 333, 389);
+  triangle(284, 485, 333, 395, 375, 431);
+  triangle(521, 330, 416, 345, 430, 388);
+  triangle(477, 485, 430, 394, 388, 431);
+
+  //legs
+  stroke(0);
+  line(380, 430, 380, 690);
+  fill(0);
+  ellipse(380, 690, 100, 10);
+
+  //lines
+  strokeWeight(2);
+  line(381, 220, 380, 340); 
+  line(238, 339, 338, 368);
+  line(514, 334, 423, 367);
+  line(288, 483, 353, 413);
+  line(477, 484, 411, 414);
+
+  //flower
+  fill(255, 255, 255);
+  rect(144, 605, 70, 90, 7);
+  
+  stroke(153, 76,0);
+  line(178, 579, 178, 605);
+  
+  stroke(2);
+  fill(0, 102, 51);
+  triangle(143, 590, 178, 585, 175, 575);
+  triangle(202, 595, 179, 587, 182, 580);
+ 
+  fill(153, 0,0);
+  triangle(156, 556, 175, 576, 180, 575);
+  triangle(199, 565, 181, 575, 181, 583);
+  triangle(194, 553, 181, 577, 176, 571);
+  triangle(167, 546, 173, 568, 177, 568);
+}
+
+//SNÖ PÅ DENNA, TACK!
+void luckaElva() {
+ //background
+ fill(103, 103,103);
+ rect(0,0,800,800);
+
+  noStroke();
+  //Large
+  fill(237, 240, 239);
+  ellipse(400, 600, 250, 250);
+  
+  //middle
+  ellipse(400, 380, 200, 200);
+  
+  //armar
+  strokeWeight(4);
+  stroke(102, 51,0);
+  
+  //wright
+  line(493, 351, 596, 313);
+  line(564, 325, 566, 288);
+  line(548, 334, 569, 343);
+  line(592, 318, 601, 323);
+  
+  //left
+  line(301, 361, 202, 321);
+  line(232, 333, 223, 306);
+  line(210, 328, 194, 337);
+  
+  //buttons
+  fill(0,0,0);
+  ellipse(400, 326, 5, 5);
+  ellipse(400, 363, 5, 5);
+  ellipse(400, 399, 5, 5);
+  
+  //small
+  noStroke();
+  fill(237, 240, 239);
+  ellipse(400, 217, 130, 130);
+  
+  //scarf
+  fill(255,0,0);
+  rect(358, 273, 80, 20, 7);
+  quad(361, 291, 378, 293, 361, 332, 337, 335);
+  
+  //eyes
+  fill(0,0,0);
+  ellipse(378, 197, 10, 10);
+  ellipse(422, 195, 10, 10);
+  
+  //nose
+  fill(245, 149, 52);
+  triangle(389, 220, 409, 222, 399, 240);
+  
+  //hat
+  fill(0);
+  rect(350, 155, 100, 10);
+  rect(370, 95, 60, 70); 
+}
+
+void luckaTolv() {
+  //background
+  fill(224,224,224);
+  rect(0,0,800,800);
+  
+   //ribbon
+  fill(255,0,0);
+  rect(369, 70, 50, 125);
+  
+  //white
+  noStroke();
+  fill(255);
+  ellipse(250, 250, 300, 300); 
+  quad(145, 357, 228, 437, 409, 202, 369, 160);
+
+  //red
+  fill(255, 0, 0);
+  ellipse(550, 250, 300, 300);
+  quad(421, 174, 203, 414, 394, 603, 670, 342); 
+
+  //squares
+  fill(255);
+  quad(401, 196, 442, 242, 395, 292, 346, 250);
+  quad(292, 305, 343, 350, 303, 393, 251, 347);
+  quad(395, 298, 452, 350, 401, 401, 346, 352);
+  quad(304, 399, 355, 451, 296, 510, 245, 458);
+  quad(401, 407, 455, 461, 408, 507, 356, 455);
+  quad(414, 417, 452, 459, 417, 497, 378, 459);
+  quad(408, 509, 451, 553, 394, 603, 351, 560);
+  quad(502, 306, 552, 356, 508, 400, 456, 352);
+  quad(511, 406, 556, 452, 499, 503, 459, 462);
+}
+
 
 void luckaTretton () {
   noStroke();
@@ -186,6 +451,120 @@ void luckaTretton () {
   line (323, 223, 326, 249);
   line (481, 223, 485, 249);
   line (632, 223, 635, 249);
+}
+
+void luckaFjorton() {
+  noStroke();
+  //TRIANGEL LJUS
+  fill (249, 215, 47); 
+  triangle(383, 146, 93, 612, 652, 612);
+
+  //SNÖKULOR
+  fill (255);
+  ellipse (383, 150, 90, 90);
+  ellipse (426, 220, 90, 90);
+  ellipse (338, 221, 90, 90);
+  ellipse (290, 298, 100, 100);
+  ellipse (244, 378, 100, 100);
+  ellipse (193, 456, 90, 90);
+  ellipse (141, 530, 90, 90);
+  ellipse (100, 600, 90, 90);
+  ellipse (190, 605, 90, 90);
+  ellipse (280, 605, 90, 90);
+  ellipse (370, 605, 90, 90);
+  ellipse (462, 605, 90, 90);
+  ellipse (553, 605, 90, 90);
+  ellipse (643, 605, 90, 90);
+  ellipse (605, 530, 90, 90);
+  ellipse (561, 456, 90, 90);
+  ellipse (516, 379, 90, 90);
+  ellipse (471, 298, 100, 100);
+  ellipse (380, 290, 90, 90);
+  ellipse (339, 375, 100, 100);
+  ellipse (427, 368, 90, 90);
+  ellipse (284, 450, 90, 90);
+  ellipse (237, 528, 90, 90);
+  ellipse (326, 529, 90, 90);
+  ellipse (417, 524, 90, 90);
+  ellipse (507, 525, 90, 90);
+  ellipse (377, 450, 90, 90);
+  ellipse (466, 446, 90, 90);
+}
+
+void luckaFemton() {
+//background
+  fill(255, 242, 215);
+  rect(0,0,800,800);
+  
+//table
+  noStroke();
+  fill(102, 51, 0);
+  rect(0, 300, 800, 500);
+
+//Platter
+  fill(237, 240, 239);
+  ellipse(416, 532, 600, 350);
+  
+//green
+  fill(0,102,51);
+  ellipse(416, 532, 500, 300);
+
+//ham
+  noStroke();
+  fill(252, 166, 212);
+  ellipse(418, 480, 390, 300);
+ 
+//ears
+  triangle(281, 322, 282, 381, 330, 351);
+  triangle(548, 319, 491, 346, 546, 371);
+  
+  fill(0,100);
+  triangle(293, 343, 293, 366, 311, 359);
+  triangle(539, 337, 516, 348, 535, 357);
+ 
+//mouth
+  fill(0, 100);
+  quad(382, 485, 390, 520, 445, 525, 456, 483);
+
+//apple
+  fill(153,0,0);
+  ellipse(417, 520, 60,60);
+  
+//nose
+  fill(188, 127, 160);
+  ellipse(420, 460, 100, 75);
+  fill(0,50);
+  ellipse(400, 457, 30,30);
+  ellipse(436, 457, 30,30); 
+  
+//mouth
+  fill(188, 127, 160);
+  ellipse(417, 549, 50, 15);
+  
+//teeth
+  fill(255);
+  triangle(408, 499, 415, 500, 412, 509);
+  triangle(424, 500, 431, 499, 426, 509);
+  
+//eyes
+  stroke(0,150);
+  strokeWeight(8);
+  fill(0);
+  ellipse(392, 413, 10,10);
+  ellipse(443, 413, 10,10);
+
+  //decoration
+  strokeWeight(20);
+  stroke(0,153,0);
+  noFill();
+  arc(30, 4, 100, 100, 0, PI+QUARTER_PI, OPEN);
+  arc(130, 4, 100, 100, 0, PI+QUARTER_PI, OPEN);
+  arc(230, 4, 100, 100, 0, PI+QUARTER_PI, OPEN);
+  arc(330, 4, 100, 100, 0, PI+QUARTER_PI, OPEN);
+  arc(430, 4, 100, 100, 0, PI+QUARTER_PI, OPEN);
+  arc(530, 4, 100, 100, 0, PI+QUARTER_PI, OPEN);
+  arc(630, 4, 100, 100, 0, PI+QUARTER_PI, OPEN);
+  arc(740, 4, 100, 100, 0, PI+QUARTER_PI, OPEN); 
 }
 
 void luckaTjugo () {
@@ -227,50 +606,14 @@ void luckaTjugo () {
   line (632, 223, 635, 249);
 }
 
-void luckaFjorton() {
-  noStroke();
-
-  //TRIANGEL LJUS
-  fill (249, 215, 47); 
-  triangle(383, 146, 93, 612, 652, 612);
-
-  //SNÖKULOR
-  fill (255);
-  ellipse (383, 150, 90, 90);
-  ellipse (426, 220, 90, 90);
-  ellipse (338, 221, 90, 90);
-  ellipse (290, 298, 100, 100);
-  ellipse (244, 378, 100, 100);
-  ellipse (193, 456, 90, 90);
-  ellipse (141, 530, 90, 90);
-  ellipse (100, 600, 90, 90);
-  ellipse (190, 605, 90, 90);
-  ellipse (280, 605, 90, 90);
-  ellipse (370, 605, 90, 90);
-  ellipse (462, 605, 90, 90);
-  ellipse (553, 605, 90, 90);
-  ellipse (643, 605, 90, 90);
-  ellipse (605, 530, 90, 90);
-  ellipse (561, 456, 90, 90);
-  ellipse (516, 379, 90, 90);
-  ellipse (471, 298, 100, 100);
-  ellipse (380, 290, 90, 90);
-  ellipse (339, 375, 100, 100);
-  ellipse (427, 368, 90, 90);
-  ellipse (284, 450, 90, 90);
-  ellipse (237, 528, 90, 90);
-  ellipse (326, 529, 90, 90);
-  ellipse (417, 524, 90, 90);
-  ellipse (507, 525, 90, 90);
-  ellipse (377, 450, 90, 90);
-  ellipse (466, 446, 90, 90);
-}
-
-void luckaTwentyOne() {
+void luckaTjugoEtt() {
   fill(255);
-  rect(0,0,800, 500);
+  rect(0, 0, 800, 800);
+
+  fill(255);
+  rect(0, 0, 800, 500);
   fill(237, 240, 239);
-  rect(0,500, 800, 400);
+  rect(0, 500, 800, 400);
 
   //body
   noStroke();
@@ -309,7 +652,6 @@ void luckaTwentyOne() {
   fill(255);
   ellipse(351, 195, 10, 35);
   ellipse(450, 197, 10, 35);
-
 
   //eyes
   stroke(255);

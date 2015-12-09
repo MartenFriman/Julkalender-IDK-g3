@@ -46,6 +46,9 @@ color snowGrey   = color(237, 240, 239);
 color yellow     = color(249, 215, 47);
 color orange     = color(245, 149, 52);
 
+// frame variables
+PFont pFont;
+
 void setup() {
   //size (1920, 1080);
   fullScreen();
@@ -53,6 +56,8 @@ void setup() {
   initPositions();
   textSize(55);
   mainTimer = millis();
+  pFont = createFont("Apple-Chancery", 20);
+  textFont(pFont);
 }
 
 void draw() {
