@@ -53,6 +53,54 @@ void lucka7() {
   ellipse(400, 400, 670, 670);
 }
 
+void lucka9() {
+  
+  //GUBBE 1
+  noStroke();
+  fill(102, 51, 0);
+  ellipse(400, 143, 200, 200);//huvud
+  strokeWeight(120);
+  stroke(102, 51, 0);
+  line(400, 400, 200, 500);//v.arm
+  line(400, 400,600, 500);//h.arm
+  line(400, 400, 250, 700);//v.ben
+  line(400, 400, 550, 700);//h.ben
+
+  noStroke();
+  fill(300, 20, 150, 50);
+  ellipse(400, 20, 50, 50);//knapp
+  ellipse(400, 500, 50, 50);//knapp
+
+fill(255);
+  ellipse(375, 290, 25, 25);//v.eye
+  ellipse(425, 290, 25, 25);//h.eye
+  
+  //v.armdekor
+  ellipse(164, 468, 25, 25);
+  ellipse(176, 476, 25, 25);
+  ellipse(184, 484, 25, 25);
+  ellipse(192, 492, 25, 25);
+  ellipse(200, 500, 25, 25);
+  ellipse(208, 510,25, 25);
+  ellipse(213, 520, 25, 25);
+  ellipse(217, 530, 25, 25);
+  ellipse(222, 540,25, 25);
+  
+  //h.armdekor
+  ellipse(620, 454, 25, 25);
+  ellipse(612, 462, 25, 25);
+  ellipse(604, 470, 25, 25);
+  ellipse(596, 478, 25, 25);
+  ellipse(590, 486, 25, 25);
+  ellipse(588, 494, 25, 25);
+  ellipse(584, 502, 25, 25);
+  ellipse(580, 510, 25, 25);
+  ellipse(576, 518, 25, 25);
+  ellipse(570, 526, 25, 25);
+  ellipse(568, 534, 25, 25);
+   
+}
+
 void lucka16() {
   fill(0);
   rect(0, 0, 800, 800);
