@@ -29,13 +29,19 @@ void calendarMain() {
   println(xPan);
 
   //image(BGImage, 0, 0, 1920*sizeMultiplier, 1080*sizeMultiplier);
-
-  textSize(55*sizeMultiplier);
-  for (int i = 0; i < 24; i++) {
+  if (sizeMultiplier < 7) {
+    textSize(55*sizeMultiplier);
+    for (int i = 0; i < 24; i++) {
+      noFill();
+      rect(framePositions[i][0]*sizeMultiplier, framePositions[i][1]*sizeMultiplier, frameSize*sizeMultiplier, frameSize*sizeMultiplier);
+      fill(255, 0, 0);
+    //  text(i+1, framePositions[i][0]+35*sizeMultiplier, framePositions[i][1]+70*sizeMultiplier);
+    }
+  } else {
     noFill();
-    rect(framePositions[i][0]*sizeMultiplier, framePositions[i][1]*sizeMultiplier, frameSize*sizeMultiplier, frameSize*sizeMultiplier);
-    fill(255, 0, 0);
-    text(i+1, framePositions[i][0]+35*sizeMultiplier, framePositions[i][1]+70*sizeMultiplier);
+      rect(framePositions[dagensLucka-1][0]*sizeMultiplier, framePositions[dagensLucka-1][1]*sizeMultiplier, frameSize*sizeMultiplier, frameSize*sizeMultiplier);
+      fill(255, 0, 0);
+    //  text(dagensLucka, framePositions[dagensLucka-1][0]+35*sizeMultiplier, framePositions[dagensLucka-1][1]+70*sizeMultiplier);
   }
   popMatrix();
 }

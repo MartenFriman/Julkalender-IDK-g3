@@ -1,6 +1,7 @@
+
+// Base code for main calendar operation
 int[][] framePositions = new int[24][2];
 int frameSize = 100;
-
 float sizeMultiplier = 1.0;
 boolean zoomIn = false;
 boolean zoomOut = false;
@@ -13,6 +14,8 @@ double yPan;
 
 int dagensLucka = 1;
 
+
+// Preset colors based on our initial color palette
 color red = color(255, 0, 0);
 color darkRed    = color(153, 0, 0);
 color green      = color(0, 153, 0);
