@@ -71,12 +71,8 @@ void setup() {
   initPositions();
   textSize(55);
   mainTimer = millis();
-<<<<<<< HEAD
-<<<<<<< HEAD
   appleFont = createFont("Apple-Chancery", 20);
-  textFont(pFont);
-=======
-=======
+  
   
   for(int i = 0; i < quantity; i++) {
     flakeSize[i] = round(random(minFlakeSize, maxFlakeSize));
@@ -85,7 +81,6 @@ void setup() {
     direction[i] = round(random(0, 1));
   }
 
->>>>>>> origin/master
   timer1 = millis();
   ernst1 = loadImage("ernst.jpg");
   ernst2 = loadImage("ernst2.jpg");
@@ -94,7 +89,6 @@ void setup() {
   lussekatt2 = loadImage("lussekatt1.jpg");
   lussekatt3 = loadImage("lussekatt1.jpg");
   lussekatt4 = loadImage("lussekatt1.jpg");
->>>>>>> origin/master
 }
 
 void draw() {

@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-void luckaTva(){
+
+void lucka2(){
  //background
+ textFont(appleFont);
  fill(224,224,224);
  rect(0,0,800, 800);
   
@@ -37,10 +37,8 @@ void luckaTva(){
  
  fill(0);
  text("Merry Christmas", 457, 290);
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/master
+}
+
 void luckaSju() {
   size(800, 800);
   fill(255);
@@ -54,6 +52,7 @@ void luckaSju() {
   ellipse(400, 400, 650, 650);
   ellipse(400, 400, 670, 670);
 }
+
 void luckaSexton() {
   fill(0);
   rect(0, 0, 800, 800);
@@ -67,6 +66,7 @@ void luckaSexton() {
   fill(102, 51, 0);
   rect(380, 650, 20, 30);
 }
+
 void luckaSjutton() {
   size(800, 800);
   fill(255, 242, 215);
@@ -87,7 +87,7 @@ void luckaSjutton() {
 }
 
 void luckaArton(){
-   pFont = createFont("helvetica", 50); 
+   PFont pFont = createFont("helvetica", 50); 
   textFont(pFont);
   size(800, 800);
   fill(0);
@@ -118,9 +118,6 @@ void luckaArton(){
 
   fill(0);
   text("Merry X-mas", 300, 200);
-
-
-
 }
   
 
@@ -144,12 +141,10 @@ void luckaTio() { //SNÖ!!!!
   fill(237, 240, 239, 150);
   ellipse(400, 700, 500, 300);
   fill(153, 0, 0);
->>>>>>> origin/master
 }
 
 void lucka3 () {
   noStroke();
-
   fill (153, 0, 0); //DARK RED
   rect (150, 100, 500, 600, 5); //OUTERLINE ON LANTERN
   rect (325, 50, 150, 50); //HANDEL RED
@@ -180,7 +175,6 @@ void lucka3 () {
 }
 
 
-<<<<<<< HEAD
  //SKA HA SNÖ!! 
 void luckaFyra() {
   //background
@@ -254,11 +248,7 @@ void luckaFyra() {
   line(375, 268, 675, 268);
 }
 
-
-void luckaFem () {
-=======
 void lucka5 () { //SNOW
->>>>>>> origin/master
   stroke(102, 51, 0);
   strokeWeight(0.5);
 
@@ -267,12 +257,10 @@ void lucka5 () { //SNOW
   quad(100, 222, 700, 222, 760, 394, 36, 394); //ROOF
   rect (447, 152, 60, 70);
 
-<<<<<<< HEAD
   //RÖD PRICK TAK
-=======
+
 
   //RED DOT ROOF
->>>>>>> origin/master
   fill (255, 0, 0); 
   ellipse(116, 249, 40, 40);
   ellipse(136, 365, 40, 40);
@@ -319,14 +307,12 @@ void lucka5 () { //SNOW
   ellipse(165, 525, 40, 40);
   ellipse(280, 580, 40, 40);
 
-<<<<<<< HEAD
   //GRÖN PRICK HUS
   fill (0, 153, 0); //grön 2
-=======
+
 
   //GREEN DOT ON HOUSE
   fill (0, 153, 0); //GREEN
->>>>>>> origin/master
   ellipse(350, 575, 40, 40);
   ellipse(405, 475, 40, 40);
   ellipse(460, 580, 40, 40);//END OF DOOR
@@ -352,12 +338,7 @@ void lucka5 () { //SNOW
   ellipse(225, 580, 40, 40);
 }
 
-<<<<<<< HEAD
-void luckaSex() {
-=======
 void lucka6() {
-
->>>>>>> origin/master
   noStroke();
   fill (0, 102, 51);
   rect (100, 540, 600, 200, 5); //BOTTOM OF ADVENTCANDLE-HOLDER
@@ -392,7 +373,6 @@ void lucka6() {
   line (632, 223, 635, 249);
 }
 
-<<<<<<< HEAD
 //OM MÖJLIGT, SNÖ I FÖNSTRET
 void luckaAtta() {
   //background
@@ -547,9 +527,6 @@ void luckaTolv() {
   quad(511, 406, 556, 452, 499, 503, 459, 462);
 }
 
-
-void luckaTretton () {
-=======
 void lucka13 () {
   noStroke();
   fill (0, 102, 51);
@@ -588,7 +565,6 @@ void lucka13 () {
 }
 
 void lucka20 () {
->>>>>>> origin/master
   noStroke();
   fill (0, 102, 51); //GREEN
   rect (100, 540, 600, 200, 5); //BOTTOM OF ADVENTCANDLE-HOLDER
@@ -627,12 +603,9 @@ void lucka20 () {
 
 void lucka14() { //SNOW
   noStroke();
-<<<<<<< HEAD
   //TRIANGEL LJUS
-=======
 
   //TRIANGLE CANDLE
->>>>>>> origin/master
   fill (249, 215, 47); 
   triangle(383, 146, 93, 612, 652, 612);
 
@@ -785,12 +758,9 @@ void luckaTjugo () {
 
 void luckaTjugoEtt() {
   fill(255);
-<<<<<<< HEAD
   rect(0, 0, 800, 800);
 
   fill(255);
-=======
->>>>>>> origin/master
   rect(0, 0, 800, 500);
   fill(237, 240, 239);
   rect(0, 500, 800, 400);
@@ -868,12 +838,6 @@ void luckaTjugoEtt() {
   rect(468, 730, 21, 21, 50, 50, 0, 0);
   rect(346, 678, 17, 17, 50, 50, 0, 0);
   rect(407, 680, 17, 17, 50, 50, 0, 0);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/master
 }
 
 void lucka1(int xStart, int yStart, int tvWidth, int tvHeight) {
@@ -906,11 +870,5 @@ void lucka1(int xStart, int yStart, int tvWidth, int tvHeight) {
   ellipse(xStart+550, yStart + 80, tvWidth-590, tvHeight-390);
   //in the television
   fill(255, 242, 215);
-<<<<<<< HEAD
-=======
->>>>>>> origin/master
->>>>>>> origin/master
-=======
 
->>>>>>> origin/master
 }
