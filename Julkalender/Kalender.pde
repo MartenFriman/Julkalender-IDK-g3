@@ -1,6 +1,6 @@
 void mainTimer() {
   if (timerPhase == timeToZoomOut) {
-    if (millis() - mainTimer > 25000) {
+    if (millis() - mainTimer > 30000) {
       mouseClicked();
       openFrame = true;
       mainTimer = millis();
@@ -9,7 +9,7 @@ void mainTimer() {
     }
   }
   if (timerPhase == timeToZoomIn) {
-    if (millis() - mainTimer > 25000) {
+    if (millis() - mainTimer > 30000) {
       closeFrame = true;
       mainTimer = millis();
       timerPhase = timeToZoomOut;
