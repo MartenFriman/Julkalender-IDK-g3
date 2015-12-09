@@ -31,6 +31,14 @@ final int timeToZoomOut = 1;
 
 int timerPhase = 1;
 
+int quantity = 300;
+float [] xPosition = new float[quantity];
+float [] yPosition = new float[quantity];
+int [] flakeSize = new int[quantity];
+int [] direction = new int[quantity];
+int minFlakeSize = 1;
+int maxFlakeSize = 5;
+
 // Preset colors based on our initial color palette
 color red = color(255, 0, 0);
 color darkRed    = color(153, 0, 0);
@@ -53,6 +61,13 @@ void setup() {
   initPositions();
   textSize(55);
   mainTimer = millis();
+  
+  for(int i = 0; i < quantity; i++) {
+    flakeSize[i] = round(random(minFlakeSize, maxFlakeSize));
+    xPosition[i] = random(0, width);
+    yPosition[i] = random(0, height);
+    direction[i] = round(random(0, 1));
+  }
 }
 
 void draw() {
@@ -62,11 +77,12 @@ void draw() {
   if (sizeMultiplier == 8) {
     pushMatrix();
     translate(560, 140);
-    luckaFem();
+   // luckaFem();
     
     popMatrix();
     luckOppning();
   }
+  snowFall();
 }
 
 /*

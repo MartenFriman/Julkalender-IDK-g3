@@ -1,6 +1,6 @@
 void mainTimer() {
   if (timerPhase == timeToZoomOut) {
-    if (millis() - mainTimer > 10000) {
+    if (millis() - mainTimer > 25000) {
       mouseClicked();
       openFrame = true;
       mainTimer = millis();
@@ -45,15 +45,17 @@ void calendarMain() {
 
   pushMatrix();
   translate(xPos, yPos);
-  if (sizeMultiplier < 7) {
+  if (sizeMultiplier < 8) {
     textSize(45*sizeMultiplier);
     for (int i = 0; i < 24; i++) {
       noFill();
       stroke(red);
       strokeWeight(4);
+     // if (framePositions[i][0] < 2200 && framePositions[i][0] > -200 && framePositions[i][1]*sizeMultiplier > -100 && framePositions[i][1]*sizeMultiplier < 1300) {
       rect(framePositions[i][0]*sizeMultiplier, framePositions[i][1]*sizeMultiplier, frameSize*sizeMultiplier, frameSize*sizeMultiplier);
       fill(255, 0, 0);
       text(i+1, (framePositions[i][0]-60)*sizeMultiplier, (framePositions[i][1]+70)*sizeMultiplier);
+    //  }
     }
   } else {
     noFill();
