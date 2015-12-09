@@ -18,20 +18,20 @@ void lucka3 () {
   fill (255);
   stroke (224, 224, 224);
   strokeWeight(0.7);
-  rect (305, 300, 190, 350, 15); //blockljus
+  rect (305, 300, 190, 350, 15); 
 
-  stroke (153, 0, 0); //mörkröd
-  strokeWeight(15); //bredd på kryss
-  line (170, 120, 630, 650);//vänster till höger linje
-  line (630, 120, 170, 650);//höger till vänster linje
+  stroke (153, 0, 0); //DARK RED
+  strokeWeight(15); //WIDTH ON CROSS
+  line (170, 120, 630, 650);//LEFT TO RIGHT LINE
+  line (630, 120, 170, 650);//RIGHT TO LEFT LINE
 
-  stroke (0); //svart veke
-  strokeWeight(1.5); //tjocklek veken
-  line(399, 283, 401, 297); //veken början och slut
+  stroke (0); //BLACK WICK
+  strokeWeight(1.5); //WIDTH ON WICK
+  line(399, 283, 401, 297); //WICK - BEGINNING & END
 }
 
 
-void lucka5 () {
+void lucka5 () { //SNOW
   stroke(102, 51, 0);
   strokeWeight(0.5);
 
@@ -228,7 +228,7 @@ void lucka20 () {
   line (632, 223, 635, 249);
 }
 
-void lucka14() {
+void lucka14() { //SNOW
   noStroke();
 
   //TRIANGLE CANDLE
