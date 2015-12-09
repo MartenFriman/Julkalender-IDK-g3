@@ -7,4 +7,4 @@ Freja Detter,
 Mårten Friman,
 Johanna Johnson,
 Antonia Jungbeck,
-Madeleine Wittbom,
+Madeleine Wittbom
