@@ -39,7 +39,7 @@ void lucka2(){
  text("Merry Christmas", 457, 290);
 }
 
-void luckaSju() {
+void lucka7() {
   size(800, 800);
   fill(255);
   ellipse(400, 400, 700, 700);
@@ -53,7 +53,7 @@ void luckaSju() {
   ellipse(400, 400, 670, 670);
 }
 
-void luckaSexton() {
+void lucka16() {
   fill(0);
   rect(0, 0, 800, 800);
   noStroke();
@@ -67,7 +67,7 @@ void luckaSexton() {
   rect(380, 650, 20, 30);
 }
 
-void luckaSjutton() {
+void lucka17() {
   size(800, 800);
   fill(255, 242, 215);
   rect(0, 0, 800, 800);
@@ -86,7 +86,7 @@ void luckaSjutton() {
   ellipse(430, 470, 450, 500);
 }
 
-void luckaArton(){
+void lucka18(){
    PFont pFont = createFont("helvetica", 50); 
   textFont(pFont);
   size(800, 800);
@@ -121,7 +121,7 @@ void luckaArton(){
 }
   
 
-void luckaTio() { //SNÖ!!!!
+void lucka10() { //SNÖ!!!!
   fill(24, 23, 88);
   rect(0, 0, 800, 800);
   fill(237, 240, 239);
@@ -176,7 +176,7 @@ void lucka3 () {
 
 
  //SKA HA SNÖ!! 
-void luckaFyra() {
+void lucka4() {
   //background
   fill(160);
   rect(0,0,800,800);
@@ -374,7 +374,7 @@ void lucka6() {
 }
 
 //OM MÖJLIGT, SNÖ I FÖNSTRET
-void luckaAtta() {
+void lucka8() {
   //background
   fill(255);
   rect(0,0,800,800);
@@ -435,7 +435,7 @@ void luckaAtta() {
 }
 
 //SNÖ PÅ DENNA, TACK!
-void luckaElva() {
+void lucka11() {
  //background
  fill(103, 103,103);
  rect(0,0,800,800);
@@ -494,7 +494,7 @@ void luckaElva() {
   rect(370, 95, 60, 70); 
 }
 
-void luckaTolv() {
+void lucka12() {
   //background
   fill(224,224,224);
   rect(0,0,800,800);
@@ -641,7 +641,7 @@ void lucka14() { //SNOW
   ellipse (466, 446, 90, 90);
 }
 
-void luckaFemton() {
+void lucka15() {
 //background
   fill(255, 242, 215);
   rect(0,0,800,800);
@@ -717,46 +717,7 @@ void luckaFemton() {
   arc(740, 4, 100, 100, 0, PI+QUARTER_PI, OPEN); 
 }
 
-void luckaTjugo () {
-  noStroke();
-  fill (0, 102, 51);
-  rect (100, 540, 600, 200, 5); //botten på adventsstake
-  rect (130, 500, 70, 50, 5); //1a
-  rect (290, 500, 70, 50, 5); //2a
-  rect (450, 500, 70, 50, 5); //3e
-  rect (600, 500, 70, 50, 5); //4e
-
-  //LJUSEN
-  fill (255); 
-  rect (140, 250, 50, 250);
-  rect (300, 250, 50, 250);
-  rect (460, 250, 50, 250);
-  rect (610, 250, 50, 250);
-
-  //GULA LÅGAN
-  fill (249, 215, 47); // GUL 
-  ellipse (166, 205, 20, 50); 
-  ellipse (325, 205, 20, 50); 
-  ellipse (483, 205, 20, 50); 
-  ellipse (635, 205, 20, 50); 
-
-  //VITA LÅGAN
-  fill(255); 
-  ellipse (166, 217, 5, 30);
-  ellipse (324, 217, 5, 30);
-  ellipse (482, 217, 5, 30);
-  ellipse (634, 217, 5, 30);
-
-  //VEKEN
-  stroke(0);
-  strokeWeight(2);
-  line (165, 223, 167, 249);
-  line (323, 223, 326, 249);
-  line (481, 223, 485, 249);
-  line (632, 223, 635, 249);
-}
-
-void luckaTjugoEtt() {
+void lucka21() {
   fill(255);
   rect(0, 0, 800, 800);
 
