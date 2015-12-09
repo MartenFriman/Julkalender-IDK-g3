@@ -1,4 +1,24 @@
+void mainTimer() {
+  if (timerPhase == timeToZoomOut) {
+    if (millis() - mainTimer > 10000) {
+      mouseClicked();
+      openFrame = true;
+      mainTimer = millis();
+      timerPhase = timeToZoomIn;
+      println("I WORK");
+    }
+  }
+  if (timerPhase == timeToZoomIn) {
+    if (millis() - mainTimer > 25000) {
+      closeFrame = true;
+      mainTimer = millis();
+      timerPhase = timeToZoomOut;
+    }
+  }
+}
+
 void calendarMain() {
+  mainTimer();
   if (zoomIn == true) {
     sizeMultiplier+=0.01;
     if (sizeMultiplier > 8) {
@@ -12,8 +32,9 @@ void calendarMain() {
   }
   if (zoomOut == true) {
     sizeMultiplier-=0.01;
-    if (sizeMultiplier < 1) {
+    if (sizeMultiplier <= 1) {
       sizeMultiplier = 1;
+      if (frameRotation == true) dagensLucka++;
       zoomOut = false;
     }
     xPos+=xPan;
@@ -24,24 +45,23 @@ void calendarMain() {
 
   pushMatrix();
   translate(xPos, yPos);
-  println(xPos);
-  println(xTarget);
-  println(xPan);
-
-  //image(BGImage, 0, 0, 1920*sizeMultiplier, 1080*sizeMultiplier);
   if (sizeMultiplier < 7) {
-    textSize(55*sizeMultiplier);
+    textSize(45*sizeMultiplier);
     for (int i = 0; i < 24; i++) {
       noFill();
+      stroke(red);
+      strokeWeight(4);
       rect(framePositions[i][0]*sizeMultiplier, framePositions[i][1]*sizeMultiplier, frameSize*sizeMultiplier, frameSize*sizeMultiplier);
       fill(255, 0, 0);
-    //  text(i+1, framePositions[i][0]+35*sizeMultiplier, framePositions[i][1]+70*sizeMultiplier);
+      text(i+1, (framePositions[i][0]-60)*sizeMultiplier, (framePositions[i][1]+70)*sizeMultiplier);
     }
   } else {
     noFill();
-      rect(framePositions[dagensLucka-1][0]*sizeMultiplier, framePositions[dagensLucka-1][1]*sizeMultiplier, frameSize*sizeMultiplier, frameSize*sizeMultiplier);
-      fill(255, 0, 0);
-    //  text(dagensLucka, framePositions[dagensLucka-1][0]+35*sizeMultiplier, framePositions[dagensLucka-1][1]+70*sizeMultiplier);
+    stroke(red);
+    strokeWeight(4);
+    rect(framePositions[dagensLucka-1][0]*sizeMultiplier, framePositions[dagensLucka-1][1]*sizeMultiplier, frameSize*sizeMultiplier, frameSize*sizeMultiplier);
+    fill(255, 0, 0);
+    text(dagensLucka, (framePositions[dagensLucka-1][0]-60)*sizeMultiplier, (framePositions[dagensLucka-1][1]+70)*sizeMultiplier);
   }
   popMatrix();
 }
@@ -129,4 +149,47 @@ void initPositions() {
 
   framePositions[23][0] = 560;
   framePositions[23][1] = 800;
+}
+
+
+
+void luckOppning() {
+  if (openFrame == true) {
+    frameXPos += 4;
+    if (extendY == true) frameYPos += 3;
+    else frameYPos -=3;
+    if (frameXPos == frameSize*8) extendY = !extendY;
+    if (frameXPos >= frameSize*14) {
+      frameXPos = frameSize*14;
+      openFrame = false;
+    }
+  }
+  if (closeFrame == true) {
+    frameXPos -= 4;
+    if (extendY == true) frameYPos -= 3;
+    else frameYPos +=3;
+    if (frameXPos == frameSize*8) extendY = !extendY;
+    if (frameXPos <= 0) {
+      frameXPos = 0;
+      closeFrame = false;
+      mouseClicked();
+    }
+  }
+  drawFrame();
+}
+
+void drawFrame() {
+  adaptableFrame = createShape();
+  adaptableFrame.beginShape();
+  adaptableFrame.fill(0);
+  if (extendY == false) adaptableFrame.fill(red);
+  adaptableFrame.stroke(red);
+  adaptableFrame.strokeWeight(4);
+  adaptableFrame.vertex(0, 0);
+  adaptableFrame.vertex(0, frameSize*8);
+  adaptableFrame.vertex(0 + (frameSize*8) - frameXPos, 0 + (frameSize*8) + frameYPos);
+  adaptableFrame.vertex(0 + (frameSize*8) - frameXPos, 0 - frameYPos);
+  adaptableFrame.vertex(0, 0);
+  adaptableFrame.endShape(CLOSE);
+  shape(adaptableFrame, 560, 140);
 }

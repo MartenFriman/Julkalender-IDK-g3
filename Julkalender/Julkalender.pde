@@ -14,6 +14,22 @@ double yPan;
 
 int dagensLucka = 1;
 
+PShape adaptableFrame;
+float frameXPos = 0;
+float frameYPos = 0;
+boolean openFrame = true;
+boolean closeFrame = false;
+boolean extendY = true;
+
+long mainTimer;
+long timer1;
+long timer2;
+boolean frameRotation = true;
+
+final int timeToZoomIn = 0;
+final int timeToZoomOut = 1;
+
+int timerPhase = 1;
 
 // Preset colors based on our initial color palette
 color red = color(255, 0, 0);
@@ -36,13 +52,21 @@ void setup() {
   background (160);
   initPositions();
   textSize(55);
+  mainTimer = millis();
 }
 
 void draw() {
-  background(255);
+  background(0);
  // bestämLucka();
   calendarMain();
-  //luckaTjugofyra();
+  if (sizeMultiplier == 8) {
+    pushMatrix();
+    translate(560, 140);
+    luckaFem();
+    
+    popMatrix();
+    luckOppning();
+  }
 }
 
 /*
