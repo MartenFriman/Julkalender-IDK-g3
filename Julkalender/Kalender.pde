@@ -42,11 +42,14 @@ void calendarMain() {
     yPos+=yPan;
     if (yPos > 0) yPos = 0;
   }
-
+  textFont(numbersFont);
+  textSize(55*sizeMultiplier);
+  textAlign(RIGHT);
+  
   pushMatrix();
   translate(xPos, yPos);
   if (sizeMultiplier < 8) {
-    textSize(45*sizeMultiplier);
+    
     for (int i = 0; i < 24; i++) {
       noFill();
       stroke(red);
@@ -54,7 +57,7 @@ void calendarMain() {
      // if (framePositions[i][0] < 2200 && framePositions[i][0] > -200 && framePositions[i][1]*sizeMultiplier > -100 && framePositions[i][1]*sizeMultiplier < 1300) {
       rect(framePositions[i][0]*sizeMultiplier, framePositions[i][1]*sizeMultiplier, frameSize*sizeMultiplier, frameSize*sizeMultiplier);
       fill(255, 0, 0);
-      text(i+1, (framePositions[i][0]-60)*sizeMultiplier, (framePositions[i][1]+70)*sizeMultiplier);
+      text(i+1, (framePositions[i][0]-10)*sizeMultiplier, (framePositions[i][1]+70)*sizeMultiplier);
     //  }
     }
   } else {
@@ -63,9 +66,10 @@ void calendarMain() {
     strokeWeight(4);
     rect(framePositions[dagensLucka-1][0]*sizeMultiplier, framePositions[dagensLucka-1][1]*sizeMultiplier, frameSize*sizeMultiplier, frameSize*sizeMultiplier);
     fill(255, 0, 0);
-    text(dagensLucka, (framePositions[dagensLucka-1][0]-60)*sizeMultiplier, (framePositions[dagensLucka-1][1]+70)*sizeMultiplier);
+    text(dagensLucka, (framePositions[dagensLucka-1][0]-10)*sizeMultiplier, (framePositions[dagensLucka-1][1]+70)*sizeMultiplier);
   }
   popMatrix();
+  textAlign(BASELINE);
 }
 
 void mouseClicked() {
@@ -158,8 +162,8 @@ void initPositions() {
 void luckOppning() {
   if (openFrame == true) {
     frameXPos += 8;
-    if (extendY == true) frameYPos += 6;
-    else frameYPos -=6;
+    if (extendY == true) frameYPos += 8;
+    else frameYPos -=8;
     if (frameXPos == frameSize*8) extendY = !extendY;
     if (frameXPos >= frameSize*14) {
       frameXPos = frameSize*14;
@@ -168,8 +172,8 @@ void luckOppning() {
   }
   if (closeFrame == true) {
     frameXPos -= 8;
-    if (extendY == true) frameYPos -= 6;
-    else frameYPos +=6;
+    if (extendY == true) frameYPos -= 8;
+    else frameYPos +=8;
     if (frameXPos == frameSize*8) extendY = !extendY;
     if (frameXPos <= 0) {
       frameXPos = 0;

@@ -12,7 +12,7 @@ float yTarget = 0;
 float yPos = 0;
 double yPan;
 
-int dagensLucka = 9;
+int dagensLucka = 2;
 
 PShape adaptableFrame;
 float frameXPos = 0;
@@ -20,6 +20,8 @@ float frameYPos = 0;
 boolean openFrame = true;
 boolean closeFrame = false;
 boolean extendY = true;
+
+PFont numbersFont;
 
 long mainTimer;
 long timer1;
@@ -72,6 +74,7 @@ void setup() {
   textSize(55);
   mainTimer = millis();
   appleFont = createFont("Apple-Chancery", 20);
+  numbersFont = createFont("stnicholas.ttf", 45);
 
 
   for (int i = 0; i < quantity; i++) {

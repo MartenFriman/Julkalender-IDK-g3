@@ -2,6 +2,7 @@ void snowFall() {
 for(int i = 0; i < xPosition.length; i++) {
     strokeWeight(4);
     stroke(255);
+    fill(255);
     ellipse(xPosition[i], yPosition[i], flakeSize[i], flakeSize[i]);
     
     if(direction[i] == 0) {
