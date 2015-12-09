@@ -115,7 +115,6 @@ void lucka16() {
 }
 
 void lucka17() {
-  size(800, 800);
   fill(255, 242, 215);
   rect(0, 0, 800, 800);
   fill(0);
@@ -136,7 +135,6 @@ void lucka17() {
 void lucka18(){
    PFont pFont = createFont("helvetica", 50); 
   textFont(pFont);
-  size(800, 800);
   fill(0);
   rect(0,0,800,800);
 
