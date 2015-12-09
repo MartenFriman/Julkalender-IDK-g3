@@ -12,7 +12,7 @@ float yTarget = 0;
 float yPos = 0;
 double yPan;
 
-int dagensLucka = 2;
+int dagensLucka = 24;
 
 PShape adaptableFrame;
 float frameXPos = 0;
@@ -41,6 +41,14 @@ int [] direction = new int[quantity];
 int minFlakeSize = 1;
 int maxFlakeSize = 5;
 
+PImage lanterna;
+int lanternIteration = 1;
+float sm = 1.0;
+boolean fadeIn = true;
+int lcr = 214;
+int lcg = 214;
+int lcb = 214;
+
 PImage lussekatt;
 PImage ernst1, ernst2, ernst3, ernst4;
 int eImage = 1;
@@ -63,6 +71,7 @@ color snowGrey   = color(237, 240, 239);
 color yellow     = color(249, 215, 47);
 color orange     = color(245, 149, 52);
 
+
 // frame variables
 PFont appleFont;
 
@@ -83,6 +92,8 @@ void setup() {
     yPosition[i] = random(0, height);
     direction[i] = round(random(0, 1));
   }
+  
+  lanterna = loadImage("lanterna.png");
 
   timer1 = millis();
   ernst1 = loadImage("ernst1.jpg");

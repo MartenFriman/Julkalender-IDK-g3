@@ -5,7 +5,6 @@ void mainTimer() {
       openFrame = true;
       mainTimer = millis();
       timerPhase = timeToZoomIn;
-      println("I WORK");
     }
   }
   if (timerPhase == timeToZoomIn) {
@@ -34,7 +33,10 @@ void calendarMain() {
     sizeMultiplier-=0.02;
     if (sizeMultiplier <= 1) {
       sizeMultiplier = 1;
-      if (frameRotation == true) dagensLucka++;
+      if (frameRotation == true) {
+        dagensLucka++;
+        if (dagensLucka > 24) dagensLucka = 1;
+      }
       zoomOut = false;
     }
     xPos+=xPan;
@@ -48,10 +50,17 @@ void calendarMain() {
   
   pushMatrix();
   translate(xPos, yPos);
+  noStroke();
+  fill(45);
+  
+  rect(0, 750*sizeMultiplier, width*sizeMultiplier, height*sizeMultiplier);
+  
+  lantern();
+  
   if (sizeMultiplier < 8) {
     
     for (int i = 0; i < 24; i++) {
-      noFill();
+      fill(0);
       stroke(red);
       strokeWeight(4);
      // if (framePositions[i][0] < 2200 && framePositions[i][0] > -200 && framePositions[i][1]*sizeMultiplier > -100 && framePositions[i][1]*sizeMultiplier < 1300) {
@@ -70,6 +79,8 @@ void calendarMain() {
   }
   popMatrix();
   textAlign(BASELINE);
+  
+  
 }
 
 void mouseClicked() {
@@ -157,7 +168,35 @@ void initPositions() {
   framePositions[23][1] = 800;
 }
 
-
+void lantern() {
+  if (fadeIn == true) {
+  sm += 0.005;
+  lcr += 1;
+  lcg += 1;
+  lcb += 1;
+  if (sm > 1.0) fadeIn = false;
+  }
+  if (fadeIn == false) {
+  sm -= 0.005;
+  lcr -= 1;
+  lcg -= 1;
+  lcb -= 1;
+  if (sm < 0.7) fadeIn = true;
+  }
+  
+  fill(lcr*0.3, lcg*0.3, lcb*0.3);
+  ellipse(802*sizeMultiplier, 796*sizeMultiplier, (185*sizeMultiplier)*sm, (50*sizeMultiplier)*sm);
+  
+  fill(lcr*0.7, lcg*0.7, lcb*0.7);
+  ellipse(802*sizeMultiplier, 796*sizeMultiplier, (115*sizeMultiplier)*sm, (30*sizeMultiplier)*sm);
+  
+  fill(lcr, lcg, lcb);
+  ellipse(802*sizeMultiplier, 795*sizeMultiplier, (62*sizeMultiplier)*sm, (17*sizeMultiplier)*sm);
+  
+  imageMode(CENTER);
+  image(lanterna, 800*sizeMultiplier, 750*sizeMultiplier, 80*sizeMultiplier, 100*sizeMultiplier);
+  imageMode(BASELINE);
+}
 
 void luckOppning() {
   if (openFrame == true) {

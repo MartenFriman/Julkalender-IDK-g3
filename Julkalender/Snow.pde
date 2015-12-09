@@ -3,7 +3,10 @@ for(int i = 0; i < xPosition.length; i++) {
     strokeWeight(4);
     stroke(255);
     fill(255);
-    ellipse(xPosition[i], yPosition[i], flakeSize[i], flakeSize[i]);
+    pushMatrix();
+    translate(xPos, yPos);
+    ellipse(xPosition[i]*sizeMultiplier, yPosition[i]*sizeMultiplier, flakeSize[i]*sizeMultiplier, flakeSize[i]*sizeMultiplier);
+    popMatrix();
     
     if(direction[i] == 0) {
       xPosition[i] += map(flakeSize[i], minFlakeSize, maxFlakeSize, .1, .5);
@@ -13,8 +16,8 @@ for(int i = 0; i < xPosition.length; i++) {
     
     yPosition[i] += flakeSize[i] + direction[i]; 
     
-    if(xPosition[i] > width + flakeSize[i] || xPosition[i] < -flakeSize[i] || yPosition[i] > height + flakeSize[i]) {
-      xPosition[i] = random(0, width);
+    if(xPosition[i] > (1920*sizeMultiplier) + flakeSize[i] || xPosition[i] < -flakeSize[i] || yPosition[i] > 1080 + flakeSize[i]) {
+      xPosition[i] = random(0, 1920*sizeMultiplier);
       yPosition[i] = -flakeSize[i];
     }
     
