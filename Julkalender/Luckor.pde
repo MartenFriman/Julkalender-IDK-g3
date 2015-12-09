@@ -834,12 +834,9 @@ void lucka15() {
 
 void lucka21() {
   fill(255);
-  rect(0, 0, 800, 800);
-
-  fill(255);
   rect(0, 0, 800, 500);
   fill(237, 240, 239);
-  rect(0, 500, 800, 400);
+  rect(0, 500, 800, 300);
 
   //body
   noStroke();
