@@ -39,8 +39,8 @@ int [] direction = new int[quantity];
 int minFlakeSize = 1;
 int maxFlakeSize = 5;
 
-PImage lussekatt1, lussekatt2, lussekatt3, lussekatt4;
-PImage ernst1, ernst2, ernst3;
+PImage lussekatt;
+PImage ernst1, ernst2, ernst3, ernst4;
 int eImage = 1;
 int timerErnst;
 
@@ -82,13 +82,13 @@ void setup() {
   }
 
   timer1 = millis();
-  ernst1 = loadImage("ernst.jpg");
+  ernst1 = loadImage("ernst1.jpg");
   ernst2 = loadImage("ernst2.jpg");
-  ernst3 = loadImage("ernst3.png");
-  lussekatt1 = loadImage("lussekatt1.jpg");
-  lussekatt2 = loadImage("lussekatt1.jpg");
-  lussekatt3 = loadImage("lussekatt1.jpg");
-  lussekatt4 = loadImage("lussekatt1.jpg");
+  ernst3 = loadImage("ernst3.jpg");
+  ernst4 = loadImage("ernst4.png");
+
+  lussekatt = loadImage("lussekatt.jpg");
+
 }
 
 void draw() {

@@ -43,10 +43,10 @@ void lucka7() {
   size(800, 800);
   fill(255);
   ellipse(400, 400, 700, 700);
-  image(lussekatt1, 400, 150, 200, 200);
-  image(lussekatt2, 120, 200, 200, 200);
-  image(lussekatt3, 460, 400, 200, 200);
-  image(lussekatt4, 200, 470, 200, 200);
+  image(lussekatt, 400, 150, 200, 200);
+  image(lussekatt, 120, 200, 200, 200);
+  image(lussekatt, 460, 400, 200, 200);
+  image(lussekatt, 200, 470, 200, 200);
   noFill();
   ellipse(400, 400, 630, 630);
   ellipse(400, 400, 650, 650);
