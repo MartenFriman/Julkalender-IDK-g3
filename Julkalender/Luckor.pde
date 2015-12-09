@@ -231,7 +231,7 @@ void lucka4() {
   
   //ground
   fill(153, 76, 0);
-  rect(0, 662, 800, 161);
+  rect(0, 662, 800, 138);
 
   //wall
   noStroke();
