@@ -31,10 +31,19 @@ final int timeToZoomOut = 1;
 
 int timerPhase = 1;
 
+int quantity = 300;
+float [] xPosition = new float[quantity];
+float [] yPosition = new float[quantity];
+int [] flakeSize = new int[quantity];
+int [] direction = new int[quantity];
+int minFlakeSize = 1;
+int maxFlakeSize = 5;
+
 PImage lussekatt1, lussekatt2, lussekatt3, lussekatt4;
 PImage ernst1, ernst2, ernst3;
 int eImage = 1;
 int timerErnst;
+
 
 
 // Preset colors based on our initial color palette
@@ -63,14 +72,25 @@ void setup() {
   textSize(55);
   mainTimer = millis();
 <<<<<<< HEAD
+<<<<<<< HEAD
   appleFont = createFont("Apple-Chancery", 20);
   textFont(pFont);
 =======
+=======
+  
+  for(int i = 0; i < quantity; i++) {
+    flakeSize[i] = round(random(minFlakeSize, maxFlakeSize));
+    xPosition[i] = random(0, width);
+    yPosition[i] = random(0, height);
+    direction[i] = round(random(0, 1));
+  }
+
+>>>>>>> origin/master
   timer1 = millis();
   ernst1 = loadImage("ernst.jpg");
   ernst2 = loadImage("ernst2.jpg");
   ernst3 = loadImage("ernst3.png");
-    lussekatt1 = loadImage("lussekatt1.jpg");
+  lussekatt1 = loadImage("lussekatt1.jpg");
   lussekatt2 = loadImage("lussekatt1.jpg");
   lussekatt3 = loadImage("lussekatt1.jpg");
   lussekatt4 = loadImage("lussekatt1.jpg");
@@ -84,11 +104,11 @@ void draw() {
   if (sizeMultiplier == 8) {
     pushMatrix();
     translate(560, 140);
-    luckaFem();
-
+   // luckaFem();
     popMatrix();
     luckOppning();
   }
+  snowFall();
 }
 
 /*

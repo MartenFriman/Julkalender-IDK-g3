@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 void luckaTva(){
  //background
  fill(224,224,224);
@@ -38,6 +39,8 @@ void luckaTva(){
  text("Merry Christmas", 457, 290);
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> origin/master
 void luckaSju() {
   size(800, 800);
   fill(255);
@@ -144,10 +147,7 @@ void luckaTio() { //SNÖ!!!!
 >>>>>>> origin/master
 }
 
-void luckaTre () {
-=======
 void lucka3 () {
->>>>>>> origin/master
   noStroke();
 
   fill (153, 0, 0); //DARK RED
@@ -869,8 +869,11 @@ void luckaTjugoEtt() {
   rect(346, 678, 17, 17, 50, 50, 0, 0);
   rect(407, 680, 17, 17, 50, 50, 0, 0);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> origin/master
 }
 
 void lucka1(int xStart, int yStart, int tvWidth, int tvHeight) {
@@ -903,7 +906,11 @@ void lucka1(int xStart, int yStart, int tvWidth, int tvHeight) {
   ellipse(xStart+550, yStart + 80, tvWidth-590, tvHeight-390);
   //in the television
   fill(255, 242, 215);
+<<<<<<< HEAD
 =======
 >>>>>>> origin/master
+>>>>>>> origin/master
+=======
+
 >>>>>>> origin/master
 }
