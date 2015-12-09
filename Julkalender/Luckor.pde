@@ -57,22 +57,22 @@ void lucka9() {
   //GUBBE 1
   noStroke();
   fill(102, 51, 0);
-  ellipse(400, 143, 200, 200);//huvud
+  ellipse(400, 200, 200, 200);//huvud
   strokeWeight(120);
   stroke(102, 51, 0);
-  line(400, 400, 200, 500);//v.arm
-  line(400, 400,600, 500);//h.arm
+  line(400, 300, 200, 500);//v.arm
+  line(400, 300,600, 500);//h.arm
   line(400, 400, 250, 700);//v.ben
   line(400, 400, 550, 700);//h.ben
 
   noStroke();
   fill(300, 20, 150, 50);
-  ellipse(400, 20, 50, 50);//knapp
-  ellipse(400, 500, 50, 50);//knapp
+  ellipse(400, 350, 50, 50);//knapp
+  ellipse(400, 450, 50, 50);//knapp
 
 fill(255);
-  ellipse(375, 290, 25, 25);//v.eye
-  ellipse(425, 290, 25, 25);//h.eye
+  ellipse(375, 190, 25, 25);//v.eye
+  ellipse(425, 190, 25, 25);//h.eye
   
   //v.armdekor
   ellipse(164, 468, 25, 25);
@@ -184,7 +184,7 @@ void lucka10() { //SNÖ!!!!
   rect(195, 100, 20, 70);
   rect(225, 100, 20, 70);
   fill(237, 240, 239, 150);
-  ellipse(400, 700, 500, 300);
+  //ellipse(400, 700, 500, 300);
   fill(153, 0, 0);
 }
 
@@ -700,12 +700,14 @@ void lucka20 () {
   ellipse (166, 205, 20, 50); 
   ellipse (325, 205, 20, 50); 
   ellipse (483, 205, 20, 50); 
+  ellipse (632, 205, 20, 50); 
 
   //WHITE FLAME ON CANLDE
   fill(255); //WHITE 
   ellipse (166, 217, 5, 30);
   ellipse (324, 217, 5, 30);
   ellipse (482, 217, 5, 30);
+  ellipse (633, 217, 5, 30);
 
   //WICK
   stroke(0); //BLACK
@@ -1076,7 +1078,7 @@ void lucka22() {
   ellipse(120, 536, 20, 100);
   ellipse(45, 585, 150, 20);
   fill(224, 224, 224);
-  ellipse(45, 485, 150, 20);
+  ellipse(65, 485, 120, 20);
   strokeCap(ROUND);
   stroke(0, 250);
   strokeWeight(4);
