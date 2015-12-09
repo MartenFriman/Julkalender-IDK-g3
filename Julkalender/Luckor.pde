@@ -541,8 +541,6 @@ void lucka11() {
 
 
 void lucka19 () {
-  
-
   fill(24, 23, 88, 100);
   rect(0, 0, 800, 500); 
   noStroke();
@@ -824,14 +822,14 @@ void lucka15() {
   strokeWeight(20);
   stroke(0,153,0);
   noFill();
-  arc(30, 4, 100, 100, 0, PI+QUARTER_PI, OPEN);
-  arc(130, 4, 100, 100, 0, PI+QUARTER_PI, OPEN);
-  arc(230, 4, 100, 100, 0, PI+QUARTER_PI, OPEN);
-  arc(330, 4, 100, 100, 0, PI+QUARTER_PI, OPEN);
-  arc(430, 4, 100, 100, 0, PI+QUARTER_PI, OPEN);
-  arc(530, 4, 100, 100, 0, PI+QUARTER_PI, OPEN);
-  arc(630, 4, 100, 100, 0, PI+QUARTER_PI, OPEN);
-  arc(740, 4, 100, 100, 0, PI+QUARTER_PI, OPEN); 
+  arc(60, 20, 100, 100, 0, PI+QUARTER_PI, OPEN);
+  arc(160, 20, 100, 100, 0, PI+QUARTER_PI, OPEN);
+  arc(260, 20, 100, 100, 0, PI+QUARTER_PI, OPEN);
+  arc(360, 20, 100, 100, 0, PI+QUARTER_PI, OPEN);
+  arc(460, 20, 100, 100, 0, PI+QUARTER_PI, OPEN);
+  arc(560, 20, 100, 100, 0, PI+QUARTER_PI, OPEN);
+  arc(660, 20, 90, 90, 0, PI+QUARTER_PI, OPEN);
+  arc(750, 20, 90, 90, 0, PI+QUARTER_PI, OPEN);
 }
 
 void lucka21() {
