@@ -12,7 +12,7 @@ float yTarget = 0;
 float yPos = 0;
 double yPan;
 
-int dagensLucka = 18;
+int dagensLucka = 9;
 
 PShape adaptableFrame;
 float frameXPos = 0;

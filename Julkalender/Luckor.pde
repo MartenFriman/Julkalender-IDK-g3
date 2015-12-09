@@ -822,14 +822,14 @@ void lucka15() {
   strokeWeight(20);
   stroke(0,153,0);
   noFill();
-  arc(60, 20, 100, 100, 0, PI+QUARTER_PI, OPEN);
-  arc(160, 20, 100, 100, 0, PI+QUARTER_PI, OPEN);
-  arc(260, 20, 100, 100, 0, PI+QUARTER_PI, OPEN);
-  arc(360, 20, 100, 100, 0, PI+QUARTER_PI, OPEN);
-  arc(460, 20, 100, 100, 0, PI+QUARTER_PI, OPEN);
-  arc(560, 20, 100, 100, 0, PI+QUARTER_PI, OPEN);
-  arc(660, 20, 90, 90, 0, PI+QUARTER_PI, OPEN);
-  arc(750, 20, 90, 90, 0, PI+QUARTER_PI, OPEN);
+  arc(60, 20, 100, 100, 0, PI, OPEN);
+  arc(160, 20, 100, 100, 0, PI, OPEN);
+  arc(260, 20, 100, 100, 0, PI, OPEN);
+  arc(360, 20, 100, 100, 0, PI, OPEN);
+  arc(460, 20, 100, 100, 0, PI, OPEN);
+  arc(560, 20, 100, 100, 0, PI, OPEN);
+  arc(660, 20, 90, 90, 0, PI, OPEN);
+  arc(750, 20, 90, 90, 0, PI, OPEN);
 }
 
 void lucka21() {
@@ -915,7 +915,7 @@ void lucka21() {
 
 void lucka1(int xStart, int yStart, int tvWidth, int tvHeight) {
   fill(224, 224, 224);
-  rect(0, 650, 800, 200);
+  rect(0, 650, 800, 150);
   strokeWeight(5);
   line(100, 50, 300, 200);
   line(600, 50, 300, 200);
