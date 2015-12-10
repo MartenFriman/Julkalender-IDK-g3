@@ -55,6 +55,7 @@ void lucka7() {
 void lucka9() {
   
   //GUBBE 1
+  strokeCap(ROUND);
   noStroke();
   fill(102, 51, 0);
   ellipse(400, 200, 200, 200);//huvud
@@ -1090,9 +1091,7 @@ void lucka22() {
 }
 
 void lucka23(){
-  
-  println("X: "+mouseX+" Y: "+mouseY);
-  
+    
   //GRAN 
   noStroke();
   fill(102, 51, 0);
@@ -1109,7 +1108,7 @@ void lucka23(){
   stroke(0, 0, 0, 200);
   fill(249, 215, 47, 240);
   ellipse(400, 76, 50, 50);
-  triangle(400, 10, 283, 60, 417, 60);
+  triangle(400, 10, 383, 60, 417, 60);
   triangle(383, 60, 340, 55, 378, 90);
   triangle(417, 60, 460, 55, 422, 90);
   triangle(378, 85, 400, 102, 355, 130);
